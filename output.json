@@ -1,0 +1,95 @@
+[
+    {
+        "file_name": "credit card fraud detectionpdf.pdf",
+        "title": "Credit Card Fraud Detection in e-Commerce: An Outlier",
+        "authors": [
+            "Inc\nSan",
+            "An Outlier",
+            "Detection Approach",
+            "Fraud Detection",
+            "Utkarsh Porwal",
+            "Smruthi Mukund",
+            "Credit Card"
+        ],
+        "abstract": "Often the challenge associated with tasks like fraud and spam de- tection is the lack of all likely patterns needed to train suitable supervised learning models. This problem accentuates when the fraudulent patterns are not only scarce, they also change over time. Change in fraudulent pattern is because fraudsters continue to in- novate novel ways to circumvent measures put in place to prevent fraud. Limited data and continuously changing patterns makes learning signiﬁcantly diﬃcult. We hypothesize that good behavior does not change with time and data points representing good be- havior have consistent spatial signature under diﬀerent groupings. Based on this hypothesis we are proposing an approach that detects outliers in large data sets by assigning a consistency score to each data point using an ensemble of clustering methods. Our main contribution is proposing a novel method that can detect outliers in large datasets and is robust to changing patterns. We also argue that area under the ROC curve, although a commonly used metric to evaluate outlier detection methods is not the right metric. Since outlier detection problems have a skewed distribution of classes, precision-recall curves are better suited because precision compares false positives to true positives (outliers) rather than true negatives (inliers) and therefore is not aﬀected by the problem of class im- balance. We show empirically that area under the precision-recall curve is a better than ROC as an evaluation metric. The proposed approach is tested on the modiﬁed version of the Landsat satellite dataset, the modiﬁed version of the ann-thyroid dataset and a large real world credit card fraud detection dataset available through Kaggle where we show signiﬁcant improvement over the baseline methods."
+    },
+    {
+        "file_name": "Machine Learning .pdf",
+        "title": "Can vision language models learn intuitive physics from interaction?",
+        "authors": [
+            "Can Demircan",
+            "Abstract\nPre",
+            "Eric Schulz",
+            "Schulze Buschoff",
+            "Konstantinos Voudouris"
+        ],
+        "abstract": "Pre-trained vision language models do not have good intuitions about the physical world. Recent work has shown that supervised fine-tuning can improve model performance on simple physical tasks. However, fine-tuned models do not appear to learn robust physical rules that can generalize to new contexts. Based on research in cognitive science, we hypothesize that models need to in- teract with an environment to properly learn its physical dynamics. We train models that learn through interaction with the environment using reinforcement learning. While learning from inter- action allows models to improve their within-task performance, it fails to produce models with gen- eralizable physical intuitions. We find that models trained on one task do not reliably generalize to re- lated tasks, even if the tasks share visual statistics and physical principles, and regardless of whether the models are trained through interaction."
+    },
+    {
+        "file_name": "predicting student performance.pdf",
+        "title": "Machine Learning Techniques for Predicting Student Performance",
+        "authors": [
+            "Rajarshi Shahu",
+            "Article Received",
+            "Publication Issue",
+            "Article Info",
+            "Rushali Deshmukh",
+            "Prasanna Kottur",
+            "Predicting Student",
+            "Aditya Kumthekar",
+            "Article History",
+            "Mathematical Statistician",
+            "Page Number",
+            "Atharva Kulkarni",
+            "Machine Learning",
+            "Engineering Applications"
+        ],
+        "abstract": "Predicting pupils' performance has become increasingly tough because of enormous data. Recently, there has been a lack of a framework to examine and monitor student growth and performance in India. The following are the key causes for this. To begin with, the previous existing prediction methods are not sufficient to determine the appropriate approaches for student performance prediction in Indian institutions. Another reason is a dearth of research on the elements that influence students' progress in specific courses within the course setting. As a result, there is a comprehensive literature review on applying data mining approaches to predict student performance. It is advocated that pupils' academic achievements be improved. The purpose is to give a recap of data mining approaches that were used to predict student performance. This algorithm also helps to find the most important characteristics in a student's data. Utilizing educational data mining approaches could boost students' success and achievement cost-effectively. Students, educators, and academic institutions would benefit and be impacted due to the features of a student's data."
+    },
+    {
+        "file_name": "Predictive Modeling of Dropout.pdf",
+        "title": "International Journal of Intelligent Systems and Applications in Engineering",
+        "authors": [
+            "Predictive Modeling",
+            "Learning Analytics",
+            "Extra Tree",
+            "Original Research",
+            "Massive Open",
+            "Kiran Amin",
+            "Online Courses",
+            "Multilayer Perceptron",
+            "Using Machine",
+            "International Journal",
+            "Open University",
+            "Intelligent Systems"
+        ],
+        "abstract": "The advent of Massive Open Online Courses (MOOCs) has revolutionized education, offering unprecedented access to high- quality learning materials globally. However, high dropout rates pose significant challenges to realizing the full potential of MOOCs. This study explores machine learning techniques for predicting student dropout in MOOCs, utilizing the Open University Learning Analytics Dataset (OULAD). Seven algorithms, including decision tree, random forest, Gaussian naïve Bayes, AdaBoost Classifier, Extra Tree Classifier, XGBoost Classifier, and Multilayer Perceptron (MLP), are employed to predict student outcomes and dropout probabilities. The XGBoost classifier emerges as the top performer, achieving 87% accuracy in pass/fail prediction and 86% accuracy in dropout prediction. Additionally, the study proposes personalized interventions based on individual dropout probabilities to enhance student retention. The findings underscore the potential of machine learning in addressing dropout challenges in MOOCs and offer insights for instructors and educational institutions to proactively support at-risk students."
+    },
+    {
+        "file_name": "Recommendation system.pdf",
+        "title": "Wide & Deep Learning for Recommender Systems",
+        "authors": [
+            "Hrishi Aradhye",
+            "Mustafa Ispir",
+            "Tushar Chandra",
+            "Google Inc",
+            "Tze Cheng",
+            "Zakaria Haque",
+            "Glen Anderson",
+            "Hemal Shah",
+            "Jeremiah Harmsen",
+            "Levent Koc",
+            "Xiaobing Liu",
+            "Vihan Jain",
+            "Deep Learning",
+            "Tal Shaked",
+            "Greg Corrado",
+            "Wei Chai",
+            "Google Play",
+            "Lichan Hong",
+            "Recommender Systems",
+            "Rohan Anil"
+        ],
+        "abstract": "Generalized linear models with nonlinear feature transfor- mations are widely used for large-scale regression and clas- siﬁcation problems with sparse inputs. Memorization of fea- ture interactions through a wide set of cross-product feature transformations are eﬀective and interpretable, while gener- alization requires more feature engineering eﬀort. With less feature engineering, deep neural networks can generalize bet- ter to unseen feature combinations through low-dimensional dense embeddings learned for the sparse features. However, deep neural networks with embeddings can over-generalize and recommend less relevant items when the user-item inter- actions are sparse and high-rank. In this paper, we present Wide & Deep learning—jointly trained wide linear models and deep neural networks—to combine the beneﬁts of mem- orization and generalization for recommender systems. We productionized and evaluated the system on Google Play, a commercial mobile app store with over one billion active users and over one million apps. Online experiment results show that Wide & Deep signiﬁcantly increased app acquisi- tions compared with wide-only and deep-only models. We have also open-sourced our implementation in TensorFlow. CCS Concepts •Computing methodologies →Machine learning; Neu- ral networks; Supervised learning; •Information systems →Recommender systems;"
+    }
+]

@@ -1,0 +1,11 @@
+google-genai
+python-dotenv
+
+
+# for data extract from PDF
+requests
+pymupdf
+spacy
+
+pandas
+openpyxl
