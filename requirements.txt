@@ -1,11 +1,26 @@
 google-genai
 python-dotenv
-
+groq
 
 # for data extract from PDF
 requests
 pymupdf
-spacy
+
 
 pandas
 openpyxl
+feedparser
+
+
+
+# summary
+
+torch
+torchvision
+transformers
+
+streamlit
+
+numpy
+neo4j
+pyvis

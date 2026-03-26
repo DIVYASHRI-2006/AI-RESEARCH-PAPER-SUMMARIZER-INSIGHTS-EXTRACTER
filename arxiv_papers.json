@@ -1,0 +1,2082 @@
+[
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2512.24933v1",
+        "title": "Adaptive Dependency-aware Prompt Optimization Framework for Multi-Step LLM Pipeline",
+        "authors": "Minjun Zhao, Xinyu Zhang, Shuai Zhang, Deyang Li, Ruifeng Shi",
+        "abstract": "Multi-step LLM pipelines invoke large language models multiple times in a structured sequence and can effectively solve complex tasks, but their performance heavily depends on the prompts used at each step. Jointly optimizing these prompts is difficult due to missing step-level supervision and inter-step dependencies. Existing end-to-end prompt optimization methods struggle under these conditions and often yield suboptimal or unstable updates. We propose ADOPT, an Adaptive Dependency-aware Prompt Optimization framework for multi-step LLM pipelines. ADOPT explicitly models the dependency between each LLM step and the final task outcome, enabling precise text-gradient estimation analogous to computing analytical derivatives. It decouples textual gradient estimation from gradient updates, reducing multi-prompt optimization to flexible single-prompt optimization steps, and employs a Shapley-based mechanism to adaptively allocate optimization resources. Experiments on real-world datasets and diverse pipeline structures show that ADOPT is effective and robust, consistently outperforming state-of-the-art prompt optimization baselines.",
+        "published": "2025-12-31T15:46:37Z",
+        "categories": "cs.CL, cs.LG",
+        "pdf_url": "https://arxiv.org/pdf/2512.24933v1",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "research_problem": "Jointly optimizing prompts in multi-step LLM pipelines",
+            "methods": [
+                "ADOPT (Adaptive Dependency-aware Prompt Optimization framework)"
+            ],
+            "datasets": [
+                "Real-world datasets"
+            ],
+            "metrics": [
+                "Performance",
+                "Robustness"
+            ],
+            "key_findings": "ADOPT is effective and robust, consistently outperforming state-of-the-art prompt optimization baselines",
+            "limitations": [
+                "Missing step-level supervision",
+                "Inter-step dependencies"
+            ],
+            "future_directions": [
+                "Applying ADOPT to diverse tasks and pipeline structures"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2511.12821v1",
+        "title": "BioMedJImpact: A Comprehensive Dataset and LLM Pipeline for AI Engagement and Scientific Impact Analysis of Biomedical Journals",
+        "authors": "Ruiyu Wang, Yuzhang Xie, Xiao Hu, Carl Yang, Jiaying Lu",
+        "abstract": "Assessing journal impact is central to scholarly communication, yet existing open resources rarely capture how collaboration structures and artificial intelligence (AI) research jointly shape venue prestige in biomedicine. We present BioMedJImpact, a large-scale, biomedical-oriented dataset designed to advance journal-level analysis of scientific impact and AI engagement. Built from 1.74 million PubMed Central articles across 2,744 journals, BioMedJImpact integrates bibliometric indicators, collaboration features, and LLM-derived semantic indicators for AI engagement. Specifically, the AI engagement feature is extracted through a reproducible three-stage LLM pipeline that we propose. Using this dataset, we analyze how collaboration intensity and AI engagement jointly influence scientific impact across pre- and post-pandemic periods (2016-2019, 2020-2023). Two consistent trends emerge: journals with higher collaboration intensity, particularly those with larger and more diverse author teams, tend to achieve greater citation impact, and AI engagement has become an increasingly strong correlate of journal prestige, especially in quartile rankings. To further validate the three-stage LLM pipeline we proposed for deriving the AI engagement feature, we conduct human evaluation, confirming substantial agreement in AI relevance detection and consistent subfield classification. Together, these contributions demonstrate that BioMedJImpact serves as both a comprehensive dataset capturing the intersection of biomedicine and AI, and a validated methodological framework enabling scalable, content-aware scientometric analysis of scientific impact and innovation dynamics. Code is available at https://github.com/JonathanWry/BioMedJImpact.",
+        "published": "2025-11-16T23:03:15Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2511.12821v1",
+        "insight": {
+            "domain": [
+                "scholarly communication",
+                "biomedicine",
+                "artificial intelligence"
+            ],
+            "research_problem": "Assessing journal impact in biomedicine, considering collaboration structures and AI research",
+            "methods": [
+                "bibliometric indicators",
+                "collaboration features",
+                "LLM-derived semantic indicators",
+                "three-stage LLM pipeline"
+            ],
+            "datasets": [
+                "BioMedJImpact",
+                "PubMed Central"
+            ],
+            "metrics": [
+                "citation impact",
+                "quartile rankings"
+            ],
+            "key_findings": [
+                "collaboration intensity and AI engagement jointly influence scientific impact",
+                "AI engagement correlates with journal prestige"
+            ],
+            "limitations": [],
+            "future_directions": []
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2509.15098v4",
+        "title": "TextMineX: Data, Evaluation Framework and Ontology-guided LLM Pipeline for Humanitarian Mine Action",
+        "authors": "Chenyue Zhou, Gürkan Solmaz, Flavio Cirillo, Kiril Gashteovski, Jonathan Fürst",
+        "abstract": "Humanitarian Mine Action (HMA) addresses the challenge of detecting and removing landmines from conflict regions. Much of the life-saving operational knowledge produced by HMA agencies is buried in unstructured reports, limiting the transferability of information between agencies. To address this issue, we propose TextMineX: the first dataset, evaluation framework and ontology-guided large language model (LLM) pipeline for knowledge extraction from text in the HMA domain. TextMineX structures HMA reports into (subject, relation, object)-triples, thus creating domain-specific knowledge. To ensure real-world relevance, we utilized the dataset from our collaborator Cambodian Mine Action Centre (CMAC). We further introduce a bias-aware evaluation framework that combines human-annotated triples with an LLM-as-Judge protocol to mitigate position bias in reference-free scoring. Our experiments show that ontology-aligned prompts improve extraction accuracy by up to 44.2%, reduce hallucinations by 22.5%, and enhance format adherence by 20.9% compared to baseline models. We publicly release the dataset and code.",
+        "published": "2025-09-18T15:55:19Z",
+        "categories": "cs.CL, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2509.15098v4",
+        "insight": {
+            "domain": [
+                "Humanitarian Mine Action"
+            ],
+            "research_problem": "Extracting knowledge from unstructured reports in the HMA domain",
+            "methods": [
+                "TextMineX: ontology-guided large language model pipeline",
+                "LLM-as-Judge protocol"
+            ],
+            "datasets": [
+                "Cambodian Mine Action Centre (CMAC) dataset"
+            ],
+            "metrics": [
+                "extraction accuracy",
+                "hallucinations",
+                "format adherence"
+            ],
+            "key_findings": [
+                "ontology-aligned prompts improve extraction accuracy by up to 44.2%",
+                "reduce hallucinations by 22.5%",
+                "enhance format adherence by 20.9%"
+            ],
+            "limitations": [],
+            "future_directions": []
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2409.13588v2",
+        "title": "ChainBuddy: An AI Agent System for Generating LLM Pipelines",
+        "authors": "Jingyue Zhang, Ian Arawjo",
+        "abstract": "As large language models (LLMs) advance, their potential applications have grown significantly. However, it remains difficult to evaluate LLM behavior on user-defined tasks and craft effective pipelines to do so. Many users struggle with where to start, often referred to as the \"blank page problem.\" ChainBuddy, an AI workflow generation assistant built into the ChainForge platform, aims to tackle this issue. From a single prompt or chat, ChainBuddy generates a starter evaluative LLM pipeline in ChainForge aligned to the user's requirements. ChainBuddy offers a straightforward and user-friendly way to plan and evaluate LLM behavior and make the process less daunting and more accessible across a wide range of possible tasks and use cases. We report a within-subjects user study comparing ChainBuddy to the baseline interface. We find that when using AI assistance, participants reported a less demanding workload, felt more confident, and produced higher quality pipelines evaluating LLM behavior. However, we also uncover a mismatch between subjective and objective ratings of performance: participants rated their successfulness similarly across conditions, while independent experts rated participant workflows significantly higher with AI assistance. Drawing connections to the Dunning-Kruger effect, we draw design implications for the future of workflow generation assistants to mitigate the risk of over-reliance.",
+        "published": "2024-09-20T15:42:33Z",
+        "categories": "cs.HC, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2409.13588v2",
+        "insight": {
+            "domain": [
+                "Large Language Models",
+                "AI workflow generation",
+                "Human-Computer Interaction"
+            ],
+            "research_problem": "Evaluating LLM behavior on user-defined tasks and crafting effective pipelines",
+            "methods": [
+                "Within-subjects user study",
+                "Comparing ChainBuddy to baseline interface"
+            ],
+            "datasets": [
+                "User study data",
+                "Independent expert ratings"
+            ],
+            "metrics": [
+                "Workload demand",
+                "Confidence",
+                "Pipeline quality",
+                "Subjective and objective ratings of performance"
+            ],
+            "key_findings": "ChainBuddy reduces workload demand, increases confidence, and improves pipeline quality, but may lead to over-reliance",
+            "limitations": "Mismatch between subjective and objective ratings of performance",
+            "future_directions": "Design implications to mitigate the risk of over-reliance, such as providing clear feedback and guidance"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2508.05012v1",
+        "title": "Making Prompts First-Class Citizens for Adaptive LLM Pipelines",
+        "authors": "Ugur Cetintemel, Shu Chen, Alexander W. Lee, Deepti Raghavan",
+        "abstract": "Modern LLM pipelines increasingly resemble data-centric systems: they retrieve external context, compose intermediate outputs, validate results, and adapt based on runtime feedback. Yet, the central element guiding this process -- the prompt -- remains a brittle, opaque string, disconnected from the surrounding dataflow. This disconnect limits reuse, optimization, and runtime control.\n  In this paper, we describe our vision and an initial design for SPEAR, a language and runtime that fills this prompt management gap by making prompts structured, adaptive, and first-class components of the execution model. SPEAR enables (1) runtime prompt refinement -- modifying prompts dynamically in response to execution-time signals such as confidence, latency, or missing context; and (2) structured prompt management -- organizing prompt fragments into versioned views with support for introspection and logging.\n  SPEAR defines a prompt algebra that governs how prompts are constructed and adapted within a pipeline. It supports multiple refinement modes (manual, assisted, and automatic), giving developers a balance between control and automation. By treating prompt logic as structured data, SPEAR enables optimizations such as operator fusion, prefix caching, and view reuse. Preliminary experiments quantify the behavior of different refinement modes compared to static prompts and agentic retries, as well as the impact of prompt-level optimizations such as operator fusion.",
+        "published": "2025-08-07T03:49:56Z",
+        "categories": "cs.DB, cs.AI, cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2508.05012v1",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "research_problem": "The disconnect between prompts and surrounding dataflow in modern LLM pipelines",
+            "methods": [
+                "SPEAR language and runtime",
+                "Prompt algebra",
+                "Runtime prompt refinement",
+                "Structured prompt management"
+            ],
+            "datasets": [],
+            "metrics": [
+                "Confidence",
+                "Latency",
+                "Missing context"
+            ],
+            "key_findings": [
+                "SPEAR enables runtime prompt refinement and structured prompt management",
+                "Preliminary experiments quantify the behavior of different refinement modes"
+            ],
+            "limitations": [],
+            "future_directions": [
+                "Operator fusion",
+                "Prefix caching",
+                "View reuse"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2511.00782v1",
+        "title": "Count-Based Approaches Remain Strong: A Benchmark Against Transformer and LLM Pipelines on Structured EHR",
+        "authors": "Jifan Gao, Michael Rosenthal, Brian Wolpin, Simona Cristea",
+        "abstract": "Structured electronic health records (EHR) are essential for clinical prediction. While count-based learners continue to perform strongly on such data, no benchmarking has directly compared them against more recent mixture-of-agents LLM pipelines, which have been reported to outperform single LLMs in various NLP tasks. In this study, we evaluated three categories of methodologies for EHR prediction using the EHRSHOT dataset: count-based models built from ontology roll-ups with two time bins, based on LightGBM and the tabular foundation model TabPFN; a pretrained sequential transformer (CLMBR); and a mixture-of-agents pipeline that converts tabular histories to natural-language summaries followed by a text classifier. We assessed eight outcomes using the EHRSHOT dataset. Across the eight evaluation tasks, head-to-head wins were largely split between the count-based and the mixture-of-agents methods. Given their simplicity and interpretability, count-based models remain a strong candidate for structured EHR benchmarking. The source code is available at: https://github.com/cristea-lab/Structured_EHR_Benchmark.",
+        "published": "2025-11-02T03:28:35Z",
+        "categories": "cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2511.00782v1",
+        "insight": {
+            "domain": [
+                "Electronic Health Records",
+                "Clinical Prediction",
+                "NLP"
+            ],
+            "research_problem": "Benchmarking count-based learners against mixture-of-agents LLM pipelines for EHR prediction",
+            "methods": [
+                "Count-based models",
+                "LightGBM",
+                "TabPFN",
+                "CLMBR",
+                "Mixture-of-agents pipeline"
+            ],
+            "datasets": [
+                "EHRSHOT"
+            ],
+            "metrics": [
+                "Head-to-head wins"
+            ],
+            "key_findings": "Count-based models remain a strong candidate for structured EHR benchmarking",
+            "limitations": "",
+            "future_directions": ""
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2508.06094v3",
+        "title": "ConlangCrafter: Constructing Languages with a Multi-Hop LLM Pipeline",
+        "authors": "Morris Alper, Moran Yanuka, Raja Giryes, Gašper Beguš",
+        "abstract": "Constructed languages (conlangs) such as Esperanto and Quenya have played diverse roles in art, philosophy, and international communication. Meanwhile, foundation models have revolutionized creative generation in text, images, and beyond. In this work, we leverage modern LLMs as computational creativity aids for end-to-end conlang creation. We introduce ConlangCrafter, a multi-hop pipeline that decomposes language design into modular stages -- phonology, morphology, syntax, lexicon generation, and translation. At each stage, our method leverages LLMs' metalinguistic reasoning capabilities, injecting randomness to encourage diversity and leveraging self-refinement feedback to encourage consistency in the emerging language description. We construct a novel, scalable evaluation framework for this task, evaluating metrics measuring consistency and typological diversity. Automatic and manual evaluations demonstrate ConlangCrafter's ability to produce coherent and varied conlangs without human linguistic expertise.",
+        "published": "2025-08-08T07:36:48Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2508.06094v3",
+        "insight": {
+            "domain": [
+                "constructed languages",
+                "computational creativity",
+                "language design"
+            ],
+            "research_problem": "leveraging modern LLMs for end-to-end conlang creation",
+            "methods": [
+                "multi-hop pipeline",
+                "metalinguistic reasoning",
+                "randomness injection",
+                "self-refinement feedback"
+            ],
+            "datasets": [],
+            "metrics": [
+                "consistency",
+                "typological diversity"
+            ],
+            "key_findings": "ConlangCrafter produces coherent and varied conlangs without human linguistic expertise",
+            "limitations": [],
+            "future_directions": []
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2504.14738v1",
+        "title": "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+        "authors": "Reya Vir, Shreya Shankar, Harrison Chase, Will Fu-Hinthorn, Aditya Parameswaran",
+        "abstract": "Large language models (LLMs) are increasingly deployed in specialized production data processing pipelines across diverse domains -- such as finance, marketing, and e-commerce. However, when running them in production across many inputs, they often fail to follow instructions or meet developer expectations. To improve reliability in these applications, creating assertions or guardrails for LLM outputs to run alongside the pipelines is essential. Yet, determining the right set of assertions that capture developer requirements for a task is challenging. In this paper, we introduce PROMPTEVALS, a dataset of 2087 LLM pipeline prompts with 12623 corresponding assertion criteria, sourced from developers using our open-source LLM pipeline tools. This dataset is 5x larger than previous collections. Using a hold-out test split of PROMPTEVALS as a benchmark, we evaluated closed- and open-source models in generating relevant assertions. Notably, our fine-tuned Mistral and Llama 3 models outperform GPT-4o by 20.93% on average, offering both reduced latency and improved performance. We believe our dataset can spur further research in LLM reliability, alignment, and prompt engineering.",
+        "published": "2025-04-20T21:04:23Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2504.14738v1",
+        "insight": {
+            "domain": [
+                "finance",
+                "marketing",
+                "e-commerce"
+            ],
+            "research_problem": "Improving reliability in LLM applications by creating assertions or guardrails for LLM outputs",
+            "methods": [
+                "fine-tuning",
+                "benchmarking"
+            ],
+            "datasets": [
+                "PROMPTEVALS"
+            ],
+            "metrics": [
+                "relevance",
+                "latency",
+                "performance"
+            ],
+            "key_findings": "Fine-tuned Mistral and Llama 3 models outperform GPT-4o by 20.93% on average",
+            "limitations": "",
+            "future_directions": "Further research in LLM reliability, alignment, and prompt engineering"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2408.09434v2",
+        "title": "HySem: A context length optimized LLM pipeline for unstructured tabular extraction",
+        "authors": "Narayanan PP, Anantharaman Palacode Narayana Iyer",
+        "abstract": "Regulatory compliance reporting in the pharmaceutical industry relies on detailed tables, but these are often under-utilized beyond compliance due to their unstructured format and arbitrary content. Extracting and semantically representing tabular data is challenging due to diverse table presentations. Large Language Models (LLMs) demonstrate substantial potential for semantic representation, yet they encounter challenges related to accuracy and context size limitations, which are crucial considerations for the industry applications. We introduce HySem, a pipeline that employs a novel context length optimization technique to generate accurate semantic JSON representations from HTML tables. This approach utilizes a custom fine-tuned model specifically designed for cost- and privacy-sensitive small and medium pharmaceutical enterprises. Running on commodity hardware and leveraging open-source models, HySem surpasses its peer open-source models in accuracy and provides competitive performance when benchmarked against OpenAI GPT-4o and effectively addresses context length limitations, which is a crucial factor for supporting larger tables.",
+        "published": "2024-08-18T10:40:37Z",
+        "categories": "cs.CL, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2408.09434v2",
+        "insight": {
+            "domain": [
+                "pharmaceutical industry"
+            ],
+            "research_problem": "Extracting and semantically representing tabular data from HTML tables",
+            "methods": [
+                "Large Language Models (LLMs)",
+                "HySem pipeline",
+                "context length optimization technique"
+            ],
+            "datasets": [],
+            "metrics": [
+                "accuracy"
+            ],
+            "key_findings": [
+                "HySem surpasses peer open-source models in accuracy",
+                "HySem provides competitive performance against OpenAI GPT-4o"
+            ],
+            "limitations": [
+                "accuracy",
+                "context size limitations"
+            ],
+            "future_directions": [
+                "supporting larger tables"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"LLM pipeline\"",
+        "paper_id": "http://arxiv.org/abs/2505.10900v3",
+        "title": "Tuning-Free LLM Can Build A Strong Recommender Under Sparse Connectivity And Knowledge Gap Via Extracting Intent",
+        "authors": "Wenqing Zheng, Noah Fatsi, Daniel Barcklow, Dmitri Kalaev, Steven Yao, Owen Reinert, C. Bayan Bruss, Daniele Rosa",
+        "abstract": "Recent advances in recommendation with large language models (LLMs) often rely on either commonsense augmentation at the item-category level or implicit intent modeling on existing knowledge graphs. However, such approaches struggle to capture grounded user intents and to handle sparsity and cold-start scenarios. In this work, we present LLM-based Intent Knowledge Graph Recommender (IKGR), a novel framework that constructs an intent-centric knowledge graph where both users and items are explicitly linked to intent nodes extracted by a tuning-free, RAG-guided LLM pipeline. By grounding intents in external knowledge sources and user profiles, IKGR canonically represents what a user seeks and what an item satisfies as first-class entities. To alleviate sparsity, we further introduce a mutual-intent connectivity densification strategy, which shortens semantic paths between users and long-tail items without requiring cross-graph fusion. Finally, a lightweight GNN layer is employed on top of the intent-enhanced graph to produce recommendation signals with low latency. Extensive experiments on public and enterprise datasets demonstrate that IKGR consistently outperforms strong baselines, particularly on cold-start and long-tail slices, while remaining efficient through a fully offline LLM pipeline.",
+        "published": "2025-05-16T06:07:19Z",
+        "categories": "cs.IR, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2505.10900v3",
+        "insight": {
+            "domain": [
+                "Recommendation Systems",
+                "Large Language Models"
+            ],
+            "research_problem": "Capturing grounded user intents and handling sparsity and cold-start scenarios in recommendation systems",
+            "methods": [
+                "LLM pipeline",
+                "RAG-guided LLM pipeline",
+                "Mutual-intent connectivity densification strategy",
+                "Lightweight GNN layer"
+            ],
+            "datasets": [
+                "Public datasets",
+                "Enterprise datasets"
+            ],
+            "metrics": [
+                "Efficiency",
+                "Latency",
+                "Performance on cold-start and long-tail slices"
+            ],
+            "key_findings": "IKGR consistently outperforms strong baselines, particularly on cold-start and long-tail slices",
+            "limitations": [
+                "Struggles to capture grounded user intents and handle sparsity and cold-start scenarios"
+            ],
+            "future_directions": [
+                "Improving the mutual-intent connectivity densification strategy"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2510.13925v1",
+        "title": "An LLM-Powered AI Agent Framework for Holistic IoT Traffic Interpretation",
+        "authors": "Daniel Adu Worae, Spyridon Mastorakis",
+        "abstract": "Internet of Things (IoT) networks generate diverse and high-volume traffic that reflects both normal activity and potential threats. Deriving meaningful insight from such telemetry requires cross-layer interpretation of behaviors, protocols, and context rather than isolated detection. This work presents an LLM-powered AI agent framework that converts raw packet captures into structured and semantically enriched representations for interactive analysis. The framework integrates feature extraction, transformer-based anomaly detection, packet and flow summarization, threat intelligence enrichment, and retrieval-augmented question answering. An AI agent guided by a large language model performs reasoning over the indexed traffic artifacts, assembling evidence to produce accurate and human-readable interpretations. Experimental evaluation on multiple IoT captures and six open models shows that hybrid retrieval, which combines lexical and semantic search with reranking, substantially improves BLEU, ROUGE, METEOR, and BERTScore results compared with dense-only retrieval. System profiling further indicates low CPU, GPU, and memory overhead, demonstrating that the framework achieves holistic and efficient interpretation of IoT network traffic.",
+        "published": "2025-10-15T12:30:01Z",
+        "categories": "cs.CL, cs.CR, cs.NI",
+        "pdf_url": "https://arxiv.org/pdf/2510.13925v1",
+        "insight": {
+            "domain": [
+                "Internet of Things (IoT)",
+                "Network Traffic Analysis"
+            ],
+            "research_problem": "Deriving meaningful insight from IoT network traffic",
+            "methods": [
+                "LLM-powered AI agent framework",
+                "Feature extraction",
+                "Transformer-based anomaly detection",
+                "Packet and flow summarization",
+                "Threat intelligence enrichment",
+                "Retrieval-augmented question answering"
+            ],
+            "datasets": [
+                "IoT captures",
+                "Open models"
+            ],
+            "metrics": [
+                "BLEU",
+                "ROUGE",
+                "METEOR",
+                "BERTScore"
+            ],
+            "key_findings": "Hybrid retrieval improves results compared to dense-only retrieval",
+            "limitations": "",
+            "future_directions": ""
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2512.01939v1",
+        "title": "An Empirical Study of Agent Developer Practices in AI Agent Frameworks",
+        "authors": "Yanlin Wang, Xinyi Xu, Jiachi Chen, Tingting Bi, Wenchao Gu, Zibin Zheng",
+        "abstract": "The rise of large language models (LLMs) has sparked a surge of interest in agents, leading to the rapid growth of agent frameworks. Agent frameworks are software toolkits and libraries that provide standardized components, abstractions, and orchestration mechanisms to simplify agent development. Despite widespread use of agent frameworks, their practical applications and how they influence the agent development process remain underexplored. Different agent frameworks encounter similar problems during use, indicating that these recurring issues deserve greater attention and call for further improvements in agent framework design. Meanwhile, as the number of agent frameworks continues to grow and evolve, more than 80% of developers report difficulties in identifying the frameworks that best meet their specific development requirements. In this paper, we conduct the first empirical study of LLM-based agent frameworks, exploring real-world experiences of developers in building AI agents. To compare how well the agent frameworks meet developer needs, we further collect developer discussions for the ten previously identified agent frameworks, resulting in a total of 11,910 discussions. Finally, by analyzing these discussions, we compare the frameworks across five dimensions: development efficiency, functional abstraction, learning cost, performance optimization, and maintainability, which refers to how easily developers can update and extend both the framework itself and the agents built upon it over time. Our comparative analysis reveals significant differences among frameworks in how they meet the needs of agent developers. Overall, we provide a set of findings and implications for the LLM-driven AI agent framework ecosystem and offer insights for the design of future LLM-based agent frameworks and agent developers.",
+        "published": "2025-12-01T17:52:15Z",
+        "categories": "cs.SE, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2512.01939v1",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Agent Frameworks",
+                "Large Language Models"
+            ],
+            "research_problem": "The practical applications and influence of agent frameworks on the agent development process remain underexplored.",
+            "methods": [
+                "Empirical study",
+                "Developer discussions",
+                "Comparative analysis"
+            ],
+            "datasets": [
+                "Developer discussions for 10 agent frameworks, totaling 11,910 discussions"
+            ],
+            "metrics": [
+                "Development efficiency",
+                "Functional abstraction",
+                "Learning cost",
+                "Performance optimization",
+                "Maintainability"
+            ],
+            "key_findings": "Significant differences among frameworks in meeting the needs of agent developers.",
+            "limitations": "",
+            "future_directions": "Design of future LLM-based agent frameworks and agent developers"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2404.08878v2",
+        "title": "Large Language Model Empowered Next-Generation MIMO Networks: Fundamentals, Challenges, and Visions",
+        "authors": "Zhe Wang, Jiayi Zhang, Hongyang Du, Ruichen Zhang, Dusit Niyato, Bo Ai, Khaled B. Letaief",
+        "abstract": "Next-generation Multiple-Input Multiple-Output (MIMO) is expected to be intelligent and scalable. In this paper, we study Large Language Model (LLM)-enabled next-generation MIMO networks. Firstly, we provide an overview of the development, fundamentals, and challenges of the next-generation MIMO. Then, we propose the concept of the generative AI agent, which is capable of generating tailored and specialized contents with the aid of LLM and Retrieval Augmented Generation (RAG). Next, we comprehensively discuss the features and advantages of the generative AI agent framework. More importantly, to tackle existing challenges of next-generation MIMO, we discuss generative AI agent-enabled next-generation MIMO networks from the perspective of performance analysis, signal processing, and resource allocation. Furthermore, we present two compelling case studies that demonstrate the effectiveness of leveraging the generative AI agent for performance analysis in complex configuration scenarios. These examples highlight how the integration of generative AI agents can significantly enhance the analysis and design of next-generation MIMO systems. Finally, we discuss important potential research future directions.",
+        "published": "2024-04-13T02:39:36Z",
+        "categories": "cs.NI, cs.IT, cs.LG, eess.SP",
+        "pdf_url": "https://arxiv.org/pdf/2404.08878v2",
+        "insight": {
+            "domain": [
+                "Next-generation MIMO",
+                "Large Language Model (LLM)"
+            ],
+            "research_problem": "Tackling existing challenges of next-generation MIMO",
+            "methods": [
+                "Generative AI agent",
+                "Retrieval Augmented Generation (RAG)"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": "Generative AI agent can enhance performance analysis and design of next-generation MIMO systems",
+            "limitations": [],
+            "future_directions": "Potential research directions"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2403.19267v2",
+        "title": "MineLand: Simulating Large-Scale Multi-Agent Interactions with Limited Multimodal Senses and Physical Needs",
+        "authors": "Xianhao Yu, Jiaqi Fu, Renjia Deng, Wenjuan Han",
+        "abstract": "While Vision-Language Models (VLMs) hold promise for tasks requiring extensive collaboration, traditional multi-agent simulators have facilitated rich explorations of an interactive artificial society that reflects collective behavior. However, these existing simulators face significant limitations. Firstly, they struggle with handling large numbers of agents due to high resource demands. Secondly, they often assume agents possess perfect information and limitless capabilities, hindering the ecological validity of simulated social interactions. To bridge this gap, we propose a multi-agent Minecraft simulator, MineLand, that bridges this gap by introducing three key features: large-scale scalability, limited multimodal senses, and physical needs. Our simulator supports 64 or more agents. Agents have limited visual, auditory, and environmental awareness, forcing them to actively communicate and collaborate to fulfill physical needs like food and resources. Additionally, we further introduce an AI agent framework, Alex, inspired by multitasking theory, enabling agents to handle intricate coordination and scheduling. Our experiments demonstrate that the simulator, the corresponding benchmark, and the AI agent framework contribute to more ecological and nuanced collective behavior.The source code of MineLand and Alex is openly available at https://github.com/cocacola-lab/MineLand.",
+        "published": "2024-03-28T09:53:41Z",
+        "categories": "cs.CL, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2403.19267v2",
+        "insight": {
+            "domain": [
+                "Computer Science",
+                "Artificial Intelligence",
+                "Multi-Agent Systems"
+            ],
+            "research_problem": "Developing a multi-agent simulator that addresses limitations of existing simulators, such as scalability and ecological validity.",
+            "methods": [
+                "Proposing a multi-agent Minecraft simulator, MineLand, with large-scale scalability, limited multimodal senses, and physical needs"
+            ],
+            "datasets": [
+                "MineLand simulator"
+            ],
+            "metrics": [
+                "Ecological and nuanced collective behavior"
+            ],
+            "key_findings": "The simulator, benchmark, and AI agent framework contribute to more ecological and nuanced collective behavior.",
+            "limitations": [
+                "Existing simulators struggle with handling large numbers of agents and assume agents possess perfect information and limitless capabilities"
+            ],
+            "future_directions": [
+                "Further development of MineLand and Alex to address real-world applications and challenges"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2512.08286v1",
+        "title": "Empowering smart app development with SolidGPT: an edge-cloud hybrid AI agent framework",
+        "authors": "Liao Hu, Qiteng Wu, Ruoyu Qi",
+        "abstract": "The integration of Large Language Models (LLMs) into mobile and software development workflows faces a persistent tension among three demands: semantic awareness, developer productivity, and data privacy. Traditional cloud-based tools offer strong reasoning but risk data exposure and latency, while on-device solutions lack full-context understanding across codebase and developer tooling. We introduce SolidGPT, an open-source, edge-cloud hybrid developer assistant built on GitHub, designed to enhance code and workspace semantic search. SolidGPT enables developers to: talk to your codebase: interactively query code and project structure, discovering the right methods and modules without manual searching. Automate software project workflows: generate PRDs, task breakdowns, Kanban boards, and even scaffold web app beginnings, with deep integration via VSCode and Notion. Configure private, extensible agents: onboard private code folders (up to approximately 500 files), connect Notion, customize AI agent personas via embedding and in-context training, and deploy via Docker, CLI, or VSCode extension. In practice, SolidGPT empowers developer productivity through: Semantic-rich code navigation: no more hunting through files or wondering where a feature lives. Integrated documentation and task management: seamlessly sync generated PRD content and task boards into developer workflows. Privacy-first design: running locally via Docker or VSCode, with full control over code and data, while optionally reaching out to LLM APIs as needed. By combining interactive code querying, automated project scaffolding, and human-AI collaboration, SolidGPT provides a practical, privacy-respecting edge assistant that accelerates real-world development workflows, ideal for intelligent mobile and software engineering contexts.",
+        "published": "2025-12-09T06:34:28Z",
+        "categories": "cs.SE, cs.AI, cs.LG",
+        "pdf_url": "https://arxiv.org/pdf/2512.08286v1",
+        "insight": {
+            "domain": [
+                "Mobile and software development",
+                "Large Language Models",
+                "Developer productivity",
+                "Data privacy"
+            ],
+            "research_problem": "Integrating Large Language Models into mobile and software development workflows while balancing semantic awareness, developer productivity, and data privacy",
+            "methods": [
+                "Edge-cloud hybrid developer assistant",
+                "Open-source",
+                "GitHub",
+                "Docker",
+                "CLI",
+                "VSCode extension"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": "SolidGPT enhances code and workspace semantic search, automates software project workflows, and empowers developer productivity through semantic-rich code navigation, integrated documentation and task management, and privacy-first design",
+            "limitations": "Traditional cloud-based tools risk data exposure and latency, on-device solutions lack full-context understanding across codebase and developer tooling",
+            "future_directions": "Intelligent mobile and software engineering contexts"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2504.06272v1",
+        "title": "RAVEN: An Agentic Framework for Multimodal Entity Discovery from Large-Scale Video Collections",
+        "authors": "Kevin Dela Rosa",
+        "abstract": "We present RAVEN an adaptive AI agent framework designed for multimodal entity discovery and retrieval in large-scale video collections. Synthesizing information across visual, audio, and textual modalities, RAVEN autonomously processes video data to produce structured, actionable representations for downstream tasks. Key contributions include (1) a category understanding step to infer video themes and general-purpose entities, (2) a schema generation mechanism that dynamically defines domain-specific entities and attributes, and (3) a rich entity extraction process that leverages semantic retrieval and schema-guided prompting. RAVEN is designed to be model-agnostic, allowing the integration of different vision-language models (VLMs) and large language models (LLMs) based on application-specific requirements. This flexibility supports diverse applications in personalized search, content discovery, and scalable information retrieval, enabling practical applications across vast datasets.",
+        "published": "2025-03-03T08:28:58Z",
+        "categories": "cs.IR, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2504.06272v1",
+        "insight": {
+            "domain": [
+                "multimodal entity discovery",
+                "video collections",
+                "information retrieval"
+            ],
+            "research_problem": "multimodal entity discovery and retrieval in large-scale video collections",
+            "methods": [
+                "category understanding",
+                "schema generation",
+                "semantic retrieval",
+                "schema-guided prompting"
+            ],
+            "datasets": [
+                "large-scale video collections"
+            ],
+            "metrics": [],
+            "key_findings": [
+                "structured, actionable representations for downstream tasks"
+            ],
+            "limitations": [],
+            "future_directions": [
+                "personalized search",
+                "content discovery",
+                "scalable information retrieval"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2404.07677v2",
+        "title": "ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs",
+        "authors": "Lei Sun, Zhengwei Tao, Youdi Li, Hiroshi Arakawa",
+        "abstract": "The integration of Large Language Models (LLMs) and knowledge graphs (KGs) has achieved remarkable success in various natural language processing tasks. However, existing methodologies that integrate LLMs and KGs often navigate the task-solving process solely based on the LLM's analysis of the question, overlooking the rich cognitive potential inherent in the vast knowledge encapsulated in KGs. To address this, we introduce Observation-Driven Agent (ODA), a novel AI agent framework tailored for tasks involving KGs. ODA incorporates KG reasoning abilities via global observation, which enhances reasoning capabilities through a cyclical paradigm of observation, action, and reflection. Confronting the exponential explosion of knowledge during observation, we innovatively design a recursive observation mechanism. Subsequently, we integrate the observed knowledge into the action and reflection modules. Through extensive experiments, ODA demonstrates state-of-the-art performance on several datasets, notably achieving accuracy improvements of 12.87% and 8.9%.",
+        "published": "2024-04-11T12:16:16Z",
+        "categories": "cs.CL, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2404.07677v2",
+        "insight": {
+            "domain": [
+                "Natural Language Processing"
+            ],
+            "research_problem": "Existing methodologies that integrate LLMs and KGs overlook the rich cognitive potential in KGs.",
+            "methods": [
+                "Observation-Driven Agent (ODA) framework",
+                "Global observation",
+                "Recursive observation mechanism"
+            ],
+            "datasets": [
+                "Multiple datasets (no specific names mentioned)"
+            ],
+            "metrics": [
+                "Accuracy"
+            ],
+            "key_findings": "ODA achieves state-of-the-art performance with accuracy improvements of 12.87% and 8.9%.",
+            "limitations": [
+                "Exponential explosion of knowledge during observation"
+            ],
+            "future_directions": [
+                "Further research on integrating observed knowledge into action and reflection modules"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2502.16069v2",
+        "title": "Curie: Toward Rigorous and Automated Scientific Experimentation with AI Agents",
+        "authors": "Patrick Tser Jern Kon, Jiachen Liu, Qiuyi Ding, Yiming Qiu, Zhenning Yang, Yibo Huang, Jayanth Srinivasa, Myungjin Lee, Mosharaf Chowdhury, Ang Chen",
+        "abstract": "Scientific experimentation, a cornerstone of human progress, demands rigor in reliability, methodical control, and interpretability to yield meaningful results. Despite the growing capabilities of large language models (LLMs) in automating different aspects of the scientific process, automating rigorous experimentation remains a significant challenge. To address this gap, we propose Curie, an AI agent framework designed to embed rigor into the experimentation process through three key components: an intra-agent rigor module to enhance reliability, an inter-agent rigor module to maintain methodical control, and an experiment knowledge module to enhance interpretability. To evaluate Curie, we design a novel experimental benchmark composed of 46 questions across four computer science domains, derived from influential research papers, and widely adopted open-source projects. Compared to the strongest baseline tested, we achieve a 3.4$\\times$ improvement in correctly answering experimental questions. Curie is open-sourced at https://github.com/Just-Curieous/Curie.",
+        "published": "2025-02-22T03:58:19Z",
+        "categories": "cs.AI, cs.LG",
+        "pdf_url": "https://arxiv.org/pdf/2502.16069v2",
+        "insight": {
+            "domain": [
+                "computer science"
+            ],
+            "research_problem": "automating rigorous experimentation",
+            "methods": [
+                "AI agent framework",
+                "intra-agent rigor module",
+                "inter-agent rigor module",
+                "experiment knowledge module"
+            ],
+            "datasets": [
+                "46 questions across four computer science domains"
+            ],
+            "metrics": [
+                "correctly answering experimental questions"
+            ],
+            "key_findings": "3.4$\times$ improvement compared to the strongest baseline",
+            "limitations": "",
+            "future_directions": ""
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2506.16609v4",
+        "title": "Aethorix v1.0: An Integrated Scientific AI Agent for Scalable Inorganic Materials Innovation and Industrial Implementation",
+        "authors": "Yingjie Shi, Yiru Gong, Yiqun Su, Suya Xiong, Jiale Han, Runtian Miao",
+        "abstract": "Artificial Intelligence (AI) is redefining the frontiers of scientific domains, ranging from drug discovery to meteorological modeling, yet its integration within industrial manufacturing remains nascent and fraught with operational challenges. To bridge this gap, we introduce Aethorix v1.0, an AI agent framework designed to overcome key industrial bottlenecks, demonstrating state-of-the-art performance in materials design innovation and process parameter optimization. Our tool is built upon three pillars: a scientific corpus reasoning engine that streamlines knowledge retrieval and validation, a diffusion-based generative model for zero-shot inverse design, and specialized interatomic potentials that enable faster screening with ab initio fidelity. We demonstrate Aethorix's utility through a real-world cement production case study, confirming its capacity for integration into industrial workflows and its role in revolutionizing the design-make-test-analyze loop while ensuring rigorous manufacturing standards are met.",
+        "published": "2025-06-19T21:19:56Z",
+        "categories": "cs.CE",
+        "pdf_url": "https://arxiv.org/pdf/2506.16609v4",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Industrial Manufacturing",
+                "Materials Science"
+            ],
+            "research_problem": "Integration of AI in industrial manufacturing",
+            "methods": [
+                "AI agent framework",
+                "Scientific corpus reasoning engine",
+                "Diffusion-based generative model",
+                "Interatomic potentials"
+            ],
+            "datasets": [
+                "Real-world cement production case study"
+            ],
+            "metrics": [
+                "State-of-the-art performance in materials design innovation and process parameter optimization"
+            ],
+            "key_findings": "Aethorix v1.0 demonstrates utility in industrial workflows and revolutionizes the design-make-test-analyze loop",
+            "limitations": "Operational challenges in industrial manufacturing",
+            "future_directions": "Further development and integration of Aethorix into industrial workflows"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"AI agent framework\"",
+        "paper_id": "http://arxiv.org/abs/2512.22529v1",
+        "title": "Multi-AI Agent Framework Reveals the \"Oxide Gatekeeper\" in Aluminum Nanoparticle Oxidation",
+        "authors": "Yiming Lu, Tingyu Lu, Di Zhang, Lili Ye, Hao Li",
+        "abstract": "Aluminum nanoparticles (ANPs) are among the most energy-dense solid fuels, yet the atomic mechanisms governing their transition from passivated particles to explosive reactants remain elusive. This stems from a fundamental computational bottleneck: ab initio methods offer quantum accuracy but are restricted to small spatiotemporal scales (< 500 atoms, picoseconds), while empirical force fields lack the reactive fidelity required for complex combustion environments. Herein, we bridge this gap by employing a \"human-in-the-loop\" closed-loop framework where self-auditing AI Agents validate the evolution of a machine learning potential (MLP). By acting as scientific sentinels that visualize hidden model artifacts for human decision-making, this collaborative cycle ensures quantum mechanical accuracy while exhibiting near-linear scalability to million-atom systems and accessing nanosecond timescales (energy RMSE: 1.2 meV/atom, force RMSE: 0.126 eV/Angstrom). Strikingly, our simulations reveal a temperature-regulated dual-mode oxidation mechanism: at moderate temperatures, the oxide shell acts as a dynamic \"gatekeeper,\" regulating oxidation through a \"breathing mode\" of transient nanochannels; above a critical threshold, a \"rupture mode\" unleashes catastrophic shell failure and explosive combustion. Importantly, we resolve a decades-old controversy by demonstrating that aluminum cation outward diffusion, rather than oxygen transport, dominates mass transfer across all temperature regimes, with diffusion coefficients consistently exceeding those of oxygen by 2-3 orders of magnitude. These discoveries establish a unified atomic-scale framework for energetic nanomaterial design, enabling the precision engineering of ignition sensitivity and energy release rates through intelligent computational design.",
+        "published": "2025-12-27T09:21:21Z",
+        "categories": "cs.AI, cond-mat.mtrl-sci",
+        "pdf_url": "https://arxiv.org/pdf/2512.22529v1",
+        "insight": {
+            "domain": [
+                "Materials Science",
+                "Computational Chemistry"
+            ],
+            "research_problem": "Understanding the atomic mechanisms governing the transition of aluminum nanoparticles from passivated particles to explosive reactants",
+            "methods": [
+                "Ab initio methods",
+                "Empirical force fields",
+                "Machine learning potential (MLP)",
+                "Human-in-the-loop closed-loop framework"
+            ],
+            "datasets": [],
+            "metrics": [
+                "Energy RMSE: 1.2 meV/atom",
+                "Force RMSE: 0.126 eV/Angstrom"
+            ],
+            "key_findings": [
+                "Temperature-regulated dual-mode oxidation mechanism",
+                "Oxide shell acts as a dynamic gatekeeper regulating oxidation through a 'breathing mode' of transient nanochannels",
+                "Above a critical threshold, a 'rupture mode' unleashes catastrophic shell failure and explosive combustion",
+                "Aluminum cation outward diffusion dominates mass transfer across all temperature regimes"
+            ],
+            "limitations": [],
+            "future_directions": [
+                "Precision engineering of ignition sensitivity and energy release rates through intelligent computational design"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2504.00727v1",
+        "title": "Personality-Driven Decision-Making in LLM-Based Autonomous Agents",
+        "authors": "Lewis Newsham, Daniel Prince",
+        "abstract": "The embedding of Large Language Models (LLMs) into autonomous agents is a rapidly developing field which enables dynamic, configurable behaviours without the need for extensive domain-specific training. In our previous work, we introduced SANDMAN, a Deceptive Agent architecture leveraging the Five-Factor OCEAN personality model, demonstrating that personality induction significantly influences agent task planning. Building on these findings, this study presents a novel method for measuring and evaluating how induced personality traits affect task selection processes - specifically planning, scheduling, and decision-making - in LLM-based agents. Our results reveal distinct task-selection patterns aligned with induced OCEAN attributes, underscoring the feasibility of designing highly plausible Deceptive Agents for proactive cyber defense strategies.",
+        "published": "2025-04-01T12:36:28Z",
+        "categories": "cs.AI, cs.MA",
+        "pdf_url": "https://arxiv.org/pdf/2504.00727v1",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Autonomous Agents",
+                "Large Language Models"
+            ],
+            "research_problem": "Measuring and evaluating the effect of induced personality traits on task selection processes in LLM-based agents",
+            "methods": [
+                "SANDMAN Deceptive Agent architecture",
+                "Five-Factor OCEAN personality model"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": "Distinct task-selection patterns aligned with induced OCEAN attributes",
+            "limitations": [],
+            "future_directions": "Designing highly plausible Deceptive Agents for proactive cyber defense strategies"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2308.11432v7",
+        "title": "A Survey on Large Language Model based Autonomous Agents",
+        "authors": "Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, Jiakai Tang, Xu Chen, Yankai Lin, Wayne Xin Zhao, Zhewei Wei, Ji-Rong Wen",
+        "abstract": "Autonomous agents have long been a prominent research focus in both academic and industry communities. Previous research in this field often focuses on training agents with limited knowledge within isolated environments, which diverges significantly from human learning processes, and thus makes the agents hard to achieve human-like decisions. Recently, through the acquisition of vast amounts of web knowledge, large language models (LLMs) have demonstrated remarkable potential in achieving human-level intelligence. This has sparked an upsurge in studies investigating LLM-based autonomous agents. In this paper, we present a comprehensive survey of these studies, delivering a systematic review of the field of LLM-based autonomous agents from a holistic perspective. More specifically, we first discuss the construction of LLM-based autonomous agents, for which we propose a unified framework that encompasses a majority of the previous work. Then, we present a comprehensive overview of the diverse applications of LLM-based autonomous agents in the fields of social science, natural science, and engineering. Finally, we delve into the evaluation strategies commonly used for LLM-based autonomous agents. Based on the previous studies, we also present several challenges and future directions in this field. To keep track of this field and continuously update our survey, we maintain a repository of relevant references at https://github.com/Paitesanshi/LLM-Agent-Survey.",
+        "published": "2023-08-22T13:30:37Z",
+        "categories": "cs.AI, cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2308.11432v7",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Machine Learning"
+            ],
+            "research_problem": "Training agents with human-like intelligence",
+            "methods": [
+                "Large Language Models (LLMs)",
+                "Unified framework"
+            ],
+            "datasets": [
+                "Web knowledge"
+            ],
+            "metrics": [
+                "Human-level intelligence"
+            ],
+            "key_findings": "LLMs have demonstrated potential in achieving human-level intelligence",
+            "limitations": "Previous research focused on isolated environments, diverging from human learning processes",
+            "future_directions": "Continuously update the survey and address challenges in the field"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2408.06458v2",
+        "title": "Towards Autonomous Agents: Adaptive-planning, Reasoning, and Acting in Language Models",
+        "authors": "Abhishek Dutta, Yen-Che Hsiao",
+        "abstract": "We propose a novel in-context learning algorithm for building autonomous decision-making language agents. The language agent continuously attempts to solve the same task by self-correcting each time the task fails. Our selected language agent demonstrates the ability to solve tasks in a text-based game environment. Our results show that the gemma-2-9b-it language model, using our proposed method, can successfully complete two of six tasks that failed in the first attempt. This highlights the effectiveness of our approach in enhancing the problem-solving capabilities of a single language model through self-correction, paving the way for more advanced autonomous agents. The code is publicly available at https://github.com/YenCheHsiao/AutonomousLLMAgentwithAdaptingPlanning.",
+        "published": "2024-08-12T19:18:05Z",
+        "categories": "cs.AI, cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2408.06458v2",
+        "insight": {
+            "domain": [
+                "autonomous decision-making",
+                "language agents",
+                "text-based game environment"
+            ],
+            "research_problem": "enhancing problem-solving capabilities of a single language model through self-correction",
+            "methods": [
+                "in-context learning algorithm",
+                "self-correction"
+            ],
+            "datasets": [
+                "text-based game environment"
+            ],
+            "metrics": [
+                "task completion rate"
+            ],
+            "key_findings": "the gemma-2-9b-it language model can successfully complete two of six tasks that failed in the first attempt",
+            "limitations": "",
+            "future_directions": "more advanced autonomous agents"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2404.04442v1",
+        "title": "Exploring Autonomous Agents through the Lens of Large Language Models: A Review",
+        "authors": "Saikat Barua",
+        "abstract": "Large Language Models (LLMs) are transforming artificial intelligence, enabling autonomous agents to perform diverse tasks across various domains. These agents, proficient in human-like text comprehension and generation, have the potential to revolutionize sectors from customer service to healthcare. However, they face challenges such as multimodality, human value alignment, hallucinations, and evaluation. Techniques like prompting, reasoning, tool utilization, and in-context learning are being explored to enhance their capabilities. Evaluation platforms like AgentBench, WebArena, and ToolLLM provide robust methods for assessing these agents in complex scenarios. These advancements are leading to the development of more resilient and capable autonomous agents, anticipated to become integral in our digital lives, assisting in tasks from email responses to disease diagnosis. The future of AI, with LLMs at the forefront, is promising.",
+        "published": "2024-04-05T22:59:02Z",
+        "categories": "cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2404.04442v1",
+        "insight": {
+            "domain": [
+                "artificial intelligence",
+                "customer service",
+                "healthcare"
+            ],
+            "research_problem": [
+                "multimodality",
+                "human value alignment",
+                "hallucinations",
+                "evaluation"
+            ],
+            "methods": [
+                "prompting",
+                "reasoning",
+                "tool utilization",
+                "in-context learning"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": [
+                "development of more resilient and capable autonomous agents"
+            ],
+            "limitations": [],
+            "future_directions": [
+                "becoming integral in our digital lives",
+                "assisting in tasks from email responses to disease diagnosis"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2407.01603v3",
+        "title": "A Review of Large Language Models and Autonomous Agents in Chemistry",
+        "authors": "Mayk Caldas Ramos, Christopher J. Collison, Andrew D. White",
+        "abstract": "Large language models (LLMs) have emerged as powerful tools in chemistry, significantly impacting molecule design, property prediction, and synthesis optimization. This review highlights LLM capabilities in these domains and their potential to accelerate scientific discovery through automation. We also review LLM-based autonomous agents: LLMs with a broader set of tools to interact with their surrounding environment. These agents perform diverse tasks such as paper scraping, interfacing with automated laboratories, and synthesis planning. As agents are an emerging topic, we extend the scope of our review of agents beyond chemistry and discuss across any scientific domains. This review covers the recent history, current capabilities, and design of LLMs and autonomous agents, addressing specific challenges, opportunities, and future directions in chemistry. Key challenges include data quality and integration, model interpretability, and the need for standard benchmarks, while future directions point towards more sophisticated multi-modal agents and enhanced collaboration between agents and experimental methods. Due to the quick pace of this field, a repository has been built to keep track of the latest studies: https://github.com/ur-whitelab/LLMs-in-science.",
+        "published": "2024-06-26T17:33:21Z",
+        "categories": "cs.LG, cs.AI, cs.CL, physics.chem-ph",
+        "pdf_url": "https://arxiv.org/pdf/2407.01603v3",
+        "insight": {
+            "domain": [
+                "chemistry",
+                "scientific domains"
+            ],
+            "research_problem": "accelerating scientific discovery through automation",
+            "methods": [
+                "large language models (LLMs)",
+                "autonomous agents"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": "LLMs can significantly impact molecule design, property prediction, and synthesis optimization",
+            "limitations": [
+                "data quality and integration",
+                "model interpretability",
+                "need for standard benchmarks"
+            ],
+            "future_directions": [
+                "more sophisticated multi-modal agents",
+                "enhanced collaboration between agents and experimental methods"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2508.17281v2",
+        "title": "From Language to Action: A Review of Large Language Models as Autonomous Agents and Tool Users",
+        "authors": "Sadia Sultana Chowa, Riasad Alvi, Subhey Sadi Rahman, Md Abdur Rahman, Mohaimenul Azam Khan Raiaan, Md Rafiqul Islam, Mukhtar Hussain, Sami Azam",
+        "abstract": "The pursuit of human-level artificial intelligence (AI) has significantly advanced the development of autonomous agents and Large Language Models (LLMs). LLMs are now widely utilized as decision-making agents for their ability to interpret instructions, manage sequential tasks, and adapt through feedback. This review examines recent developments in employing LLMs as autonomous agents and tool users and comprises seven research questions. We only used the papers published between 2023 and 2025 in conferences of the A* and A rank and Q1 journals. A structured analysis of the LLM agents' architectural design principles, dividing their applications into single-agent and multi-agent systems, and strategies for integrating external tools is presented. In addition, the cognitive mechanisms of LLM, including reasoning, planning, and memory, and the impact of prompting methods and fine-tuning procedures on agent performance are also investigated. Furthermore, we evaluated current benchmarks and assessment protocols and have provided an analysis of 68 publicly available datasets to assess the performance of LLM-based agents in various tasks. In conducting this review, we have identified critical findings on verifiable reasoning of LLMs, the capacity for self-improvement, and the personalization of LLM-based agents. Finally, we have discussed ten future research directions to overcome these gaps.",
+        "published": "2025-08-24T10:02:51Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2508.17281v2",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Autonomous Agents",
+                "Large Language Models"
+            ],
+            "research_problem": "Employing LLMs as autonomous agents and tool users",
+            "methods": [
+                "Structured analysis",
+                "Evaluation of benchmarks and assessment protocols",
+                "Analysis of 68 publicly available datasets"
+            ],
+            "datasets": [
+                "68 publicly available datasets"
+            ],
+            "metrics": [
+                "Performance of LLM-based agents in various tasks"
+            ],
+            "key_findings": [
+                "Verifiable reasoning of LLMs",
+                "Capacity for self-improvement",
+                "Personalization of LLM-based agents"
+            ],
+            "limitations": "",
+            "future_directions": [
+                "Ten future research directions to overcome gaps"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2310.16340v3",
+        "title": "RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models",
+        "authors": "Zefan Wang, Zichuan Liu, Yingying Zhang, Aoxiao Zhong, Jihong Wang, Fengbin Yin, Lunting Fan, Lingfei Wu, Qingsong Wen",
+        "abstract": "Large language model (LLM) applications in cloud root cause analysis (RCA) have been actively explored recently. However, current methods are still reliant on manual workflow settings and do not unleash LLMs' decision-making and environment interaction capabilities. We present RCAgent, a tool-augmented LLM autonomous agent framework for practical and privacy-aware industrial RCA usage. Running on an internally deployed model rather than GPT families, RCAgent is capable of free-form data collection and comprehensive analysis with tools. Our framework combines a variety of enhancements, including a unique Self-Consistency for action trajectories, and a suite of methods for context management, stabilization, and importing domain knowledge. Our experiments show RCAgent's evident and consistent superiority over ReAct across all aspects of RCA -- predicting root causes, solutions, evidence, and responsibilities -- and tasks covered or uncovered by current rules, as validated by both automated metrics and human evaluations. Furthermore, RCAgent has already been integrated into the diagnosis and issue discovery workflow of the Real-time Compute Platform for Apache Flink of Alibaba Cloud.",
+        "published": "2023-10-25T03:53:31Z",
+        "categories": "cs.SE, cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2310.16340v3",
+        "insight": {
+            "domain": [
+                "Cloud Root Cause Analysis",
+                "Large Language Model",
+                "Industrial RCA"
+            ],
+            "research_problem": "Current methods in cloud root cause analysis are reliant on manual workflow settings and do not unleash LLMs' decision-making and environment interaction capabilities.",
+            "methods": [
+                "RCAgent framework",
+                "Self-Consistency for action trajectories",
+                "Context management",
+                "Stabilization",
+                "Importing domain knowledge"
+            ],
+            "datasets": [
+                "Internally deployed model",
+                "GPT families"
+            ],
+            "metrics": [
+                "Automated metrics",
+                "Human evaluations"
+            ],
+            "key_findings": "RCAgent's evident and consistent superiority over ReAct across all aspects of RCA.",
+            "limitations": [
+                "Not mentioned"
+            ],
+            "future_directions": [
+                "Integration with more platforms",
+                "Further enhancements of the framework"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2403.09567v4",
+        "title": "Enhancing Trust in Autonomous Agents: An Architecture for Accountability and Explainability through Blockchain and Large Language Models",
+        "authors": "Laura Fernández-Becerra, Miguel Ángel González-Santamarta, Ángel Manuel Guerrero-Higueras, Francisco Javier Rodríguez-Lera, Vicente Matellán Olivera",
+        "abstract": "The deployment of autonomous agents in environments involving human interaction has increasingly raised security concerns. Consequently, understanding the circumstances behind an event becomes critical, requiring the development of capabilities to justify their behaviors to non-expert users. Such explanations are essential in enhancing trustworthiness and safety, acting as a preventive measure against failures, errors, and misunderstandings. Additionally, they contribute to improving communication, bridging the gap between the agent and the user, thereby improving the effectiveness of their interactions. This work presents an accountability and explainability architecture implemented for ROS-based mobile robots. The proposed solution consists of two main components. Firstly, a black box-like element to provide accountability, featuring anti-tampering properties achieved through blockchain technology. Secondly, a component in charge of generating natural language explanations by harnessing the capabilities of Large Language Models (LLMs) over the data contained within the previously mentioned black box. The study evaluates the performance of our solution in three different scenarios, each involving autonomous agent navigation functionalities. This evaluation includes a thorough examination of accountability and explainability metrics, demonstrating the effectiveness of our approach in using accountable data from robot actions to obtain coherent, accurate and understandable explanations, even when facing challenges inherent in the use of autonomous agents in real-world scenarios.",
+        "published": "2024-03-14T16:57:18Z",
+        "categories": "cs.RO, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2403.09567v4",
+        "insight": {
+            "domain": [
+                "Autonomous Agents",
+                "Human Interaction",
+                "Robotics"
+            ],
+            "research_problem": "Understanding circumstances behind events in autonomous agent environments and developing capabilities to justify their behaviors to non-expert users.",
+            "methods": [
+                "Blockchain technology",
+                "Large Language Models (LLMs)"
+            ],
+            "datasets": [
+                "ROS-based mobile robots"
+            ],
+            "metrics": [
+                "Accountability",
+                "Explainability"
+            ],
+            "key_findings": "The proposed solution effectively uses accountable data from robot actions to obtain coherent, accurate, and understandable explanations.",
+            "limitations": [
+                "Challenges inherent in the use of autonomous agents in real-world scenarios"
+            ],
+            "future_directions": ""
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2503.03459v2",
+        "title": "Unified Mind Model: Reimagining Autonomous Agents in the LLM Era",
+        "authors": "Pengbo Hu, Xiang Ying",
+        "abstract": "Large language models (LLMs) have recently demonstrated remarkable capabilities across domains, tasks, and languages (e.g., ChatGPT and GPT-4), reviving the research of general autonomous agents with human-like cognitive abilities. Such human-level agents require semantic comprehension and instruction-following capabilities, which exactly fall into the strengths of LLMs. Although there have been several initial attempts to build human-level agents based on LLMs, the theoretical foundation remains a challenging open problem. In this paper, we propose a novel theoretical cognitive architecture, the Unified Mind Model (UMM), which offers guidance to facilitate the rapid creation of autonomous agents with human-level cognitive abilities. Specifically, our UMM starts with the global workspace theory and further leverage LLMs to enable the agent with various cognitive abilities, such as multi-modal perception, planning, reasoning, tool use, learning, memory, reflection and motivation. Building upon UMM, we then develop an agent-building engine, MindOS, which allows users to quickly create domain-/task-specific autonomous agents without any programming effort.",
+        "published": "2025-03-05T12:49:44Z",
+        "categories": "cs.AI, cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2503.03459v2",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Cognitive Science"
+            ],
+            "research_problem": "Building human-level autonomous agents with cognitive abilities",
+            "methods": [
+                "Unified Mind Model (UMM)",
+                "Large Language Models (LLMs)",
+                "Global Workspace Theory"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": "Proposed a novel theoretical cognitive architecture (UMM) for creating autonomous agents with human-level cognitive abilities",
+            "limitations": "Theoretical foundation remains a challenging open problem",
+            "future_directions": "Development of domain-/task-specific autonomous agents using MindOS"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "paper_id": "http://arxiv.org/abs/2412.16878v1",
+        "title": "Online Preference-based Reinforcement Learning with Self-augmented Feedback from Large Language Model",
+        "authors": "Songjun Tu, Jingbo Sun, Qichao Zhang, Xiangyuan Lan, Dongbin Zhao",
+        "abstract": "Preference-based reinforcement learning (PbRL) provides a powerful paradigm to avoid meticulous reward engineering by learning rewards based on human preferences. However, real-time human feedback is hard to obtain in online tasks. Most work suppose there is a \"scripted teacher\" that utilizes privileged predefined reward to provide preference feedback. In this paper, we propose a RL Self-augmented Large Language Model Feedback (RL-SaLLM-F) technique that does not rely on privileged information for online PbRL. RL-SaLLM-F leverages the reflective and discriminative capabilities of LLM to generate self-augmented trajectories and provide preference labels for reward learning. First, we identify an failure issue in LLM-based preference discrimination, specifically \"query ambiguity\", in online PbRL. Then LLM is employed to provide preference labels and generate self-augmented imagined trajectories that better achieve the task goal, thereby enhancing the quality and efficiency of feedback. Additionally, a double-check mechanism is introduced to mitigate randomness in the preference labels, improving the reliability of LLM feedback. The experiment across multiple tasks in the MetaWorld benchmark demonstrates the specific contributions of each proposed module in RL-SaLLM-F, and shows that self-augmented LLM feedback can effectively replace the impractical \"scripted teacher\" feedback. In summary, RL-SaLLM-F introduces a new direction of feedback acquisition in online PbRL that does not rely on any online privileged information, offering an efficient and lightweight solution with LLM-driven feedback.",
+        "published": "2024-12-22T06:15:25Z",
+        "categories": "cs.LG, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2412.16878v1",
+        "insight": {
+            "domain": [
+                "Reinforcement Learning",
+                "Preference-based reinforcement learning"
+            ],
+            "research_problem": "Avoiding meticulous reward engineering in online tasks",
+            "methods": [
+                "RL Self-augmented Large Language Model Feedback (RL-SaLLM-F)",
+                "Large Language Model (LLM)"
+            ],
+            "datasets": [
+                "MetaWorld benchmark"
+            ],
+            "metrics": [
+                "Quality and efficiency of feedback",
+                "Reliability of LLM feedback"
+            ],
+            "key_findings": "Self-augmented LLM feedback can effectively replace the impractical 'scripted teacher' feedback",
+            "limitations": "Query ambiguity in LLM-based preference discrimination",
+            "future_directions": "Improving the reliability of LLM feedback"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2205.12255v1",
+        "title": "TALM: Tool Augmented Language Models",
+        "authors": "Aaron Parisi, Yao Zhao, Noah Fiedel",
+        "abstract": "Transformer based language models (LMs) demonstrate increasing performance with scale across a wide variety of tasks. Scale alone however cannot enable models to solve tasks that require access to ephemeral, changing, or private data that was unavailable at training time. Many useful tasks may also benefit from LMs being able to access APIs that read or modify state. In this work, we present Tool Augmented Language Models (TALM), combining a text-only approach to augment language models with non-differentiable tools, and an iterative \"self-play\" technique to bootstrap performance starting from few tool demonstrations. TALM exhibits strong performance on both a knowledge-heavy QA task and a reasoning oriented math task with simple tools. At a given model scale, TALM significantly outperforms non-augmented LMs. We further demonstrate that TALM successfully performs out-of-distribution inferences on both QA and math tasks, where non-augmented LMs fail. Our results suggest that Tool Augmented Language Models are a promising direction to enrich LMs' capabilities, with less dependence on scale.",
+        "published": "2022-05-24T17:58:13Z",
+        "categories": "cs.CL, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2205.12255v1",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "research_problem": "Enabling language models to access ephemeral, changing, or private data and APIs that read or modify state.",
+            "methods": [
+                "Tool Augmented Language Models (TALM)",
+                "Self-play technique"
+            ],
+            "datasets": [
+                "Knowledge-heavy QA task",
+                "Reasoning oriented math task"
+            ],
+            "metrics": [
+                "Performance comparison with non-augmented LMs",
+                "Out-of-distribution inferences"
+            ],
+            "key_findings": "TALM exhibits strong performance, significantly outperforms non-augmented LMs, and successfully performs out-of-distribution inferences.",
+            "limitations": "",
+            "future_directions": "Further research on TALM's capabilities and applications"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2503.14227v1",
+        "title": "Benchmarking Failures in Tool-Augmented Language Models",
+        "authors": "Eduardo Treviño, Hugo Contant, James Ngai, Graham Neubig, Zora Zhiruo Wang",
+        "abstract": "The integration of tools has extended the capabilities of language models (LMs) beyond vanilla text generation to versatile scenarios. However, tool-augmented language models (TaLMs) often assume 'perfect' information access and tool availability, which may not hold in the real world. To systematically study TaLMs' imperfections, we introduce the FAIL-TALMS benchmark, featuring two major failures: under-specified user queries and non-available tools. FAIL-TALMS contains 1,749 examples using 906 tools across 21 categories, including single- and multi-tool usage. We evaluate top-performing proprietary and open-source models, and find all current models except for Claude struggle to recognize missing tools or information. Further, to study possible mitigation of the failures, we enable real-time human interaction, named the Ask-and-Help (AAH) method, to provide missing information or replace non-functional tools. While AAH can help models solve tasks more correctly when queries are under-specified, it brings minimal benefit when complex tools are broken.",
+        "published": "2025-03-18T13:04:55Z",
+        "categories": "cs.SE, cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2503.14227v1",
+        "insight": {
+            "domain": [
+                "Language Models",
+                "Natural Language Processing"
+            ],
+            "research_problem": "Systematically studying the imperfections of tool-augmented language models (TaLMs)",
+            "methods": [
+                "FAIL-TALMS benchmark",
+                "Ask-and-Help (AAH) method"
+            ],
+            "datasets": [
+                "FAIL-TALMS benchmark"
+            ],
+            "metrics": [
+                "Model performance in recognizing missing tools or information"
+            ],
+            "key_findings": [
+                "Current models struggle to recognize missing tools or information",
+                "AAH method can help models solve tasks more correctly when queries are under-specified"
+            ],
+            "limitations": [
+                "Current models perform poorly when complex tools are broken"
+            ],
+            "future_directions": [
+                "Improving model performance in handling missing tools or information"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2503.00564v1",
+        "title": "ToolDial: Multi-turn Dialogue Generation Method for Tool-Augmented Language Models",
+        "authors": "Jeonghoon Shim, Gyuhyeon Seo, Cheongsu Lim, Yohan Jo",
+        "abstract": "Tool-Augmented Language Models (TALMs) leverage external APIs to answer user queries across various domains. However, existing benchmark datasets for TALM research often feature simplistic dialogues that do not reflect real-world scenarios, such as the need for models to ask clarifying questions or proactively call additional APIs when essential information is missing. To address these limitations, we construct and release ToolDial, a dataset comprising 11,111 multi-turn dialogues, with an average of 8.95 turns per dialogue, based on APIs from RapidAPI. ToolDial has two key characteristics. First, the dialogues incorporate 16 user and system actions (e.g., \"Request\", \"Clarify\", \"Fail inform\") to capture the rich dynamics of real-world interactions. Second, we simulate dialogues where the system requests necessary information from the user based on API documentation and seeks additional APIs if the user fails to provide the required information. To facilitate this process, we introduce a method for generating an API graph that represents input and output compatibility between APIs. Using ToolDial, we evaluate a suite of language models on their ability to predict correct actions and extract input parameter values for API calls from the dialogue history. Modern language models achieve accuracy scores below 70%, indicating substantial room for improvement. We release our dataset and code at https://github.com/holi-lab/ToolDial.",
+        "published": "2025-03-01T17:23:51Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2503.00564v1",
+        "insight": {
+            "domain": [
+                "Language Models",
+                "APIs",
+                "Dialogue Systems"
+            ],
+            "research_problem": "Evaluating the ability of language models to predict correct actions and extract input parameter values for API calls from dialogue history",
+            "methods": [
+                "Constructing and releasing a dataset (ToolDial) comprising 11,111 multi-turn dialogues",
+                "Introducing a method for generating an API graph"
+            ],
+            "datasets": [
+                "ToolDial"
+            ],
+            "metrics": [
+                "Accuracy scores"
+            ],
+            "key_findings": "Modern language models achieve accuracy scores below 70%",
+            "limitations": [
+                "Existing benchmark datasets feature simplistic dialogues",
+                "Language models struggle to ask clarifying questions or proactively call additional APIs"
+            ],
+            "future_directions": "Improving language models to achieve higher accuracy scores"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2402.11451v2",
+        "title": "SciAgent: Tool-augmented Language Models for Scientific Reasoning",
+        "authors": "Yubo Ma, Zhibin Gou, Junheng Hao, Ruochen Xu, Shuohang Wang, Liangming Pan, Yujiu Yang, Yixin Cao, Aixin Sun, Hany Awadalla, Weizhu Chen",
+        "abstract": "Scientific reasoning poses an excessive challenge for even the most advanced Large Language Models (LLMs). To make this task more practical and solvable for LLMs, we introduce a new task setting named tool-augmented scientific reasoning. This setting supplements LLMs with scalable toolsets, and shifts the focus from pursuing an omniscient problem solver to a proficient tool-user. To facilitate the research of such setting, we construct a tool-augmented training corpus named MathFunc which encompasses over 30,000 samples and roughly 6,000 tools. Building on MathFunc, we develop SciAgent to retrieve, understand and, if necessary, use tools for scientific problem solving. Additionally, we craft a benchmark, SciToolBench, spanning five scientific domains to evaluate LLMs' abilities with tool assistance. Extensive experiments on SciToolBench confirm the effectiveness of SciAgent. Notably, SciAgent-Mistral-7B surpasses other LLMs with the same size by more than 13% in absolute accuracy. Furthermore, SciAgent-DeepMath-7B shows much superior performance than ChatGPT.",
+        "published": "2024-02-18T04:19:44Z",
+        "categories": "cs.CL, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2402.11451v2",
+        "insight": {
+            "domain": [
+                "Scientific reasoning",
+                "Large Language Models",
+                "Scientific problem solving",
+                "Scientific domains"
+            ],
+            "research_problem": "Making scientific reasoning more practical and solvable for Large Language Models",
+            "methods": [
+                "Tool-augmented training corpus (MathFunc)",
+                "SciAgent (tool retrieval, understanding, and usage)",
+                "SciToolBench (benchmark)"
+            ],
+            "datasets": [
+                "MathFunc (over 30,000 samples and roughly 6,000 tools)"
+            ],
+            "metrics": [
+                "Absolute accuracy"
+            ],
+            "key_findings": "SciAgent surpasses other LLMs with the same size by more than 13% in absolute accuracy, and shows superior performance than ChatGPT",
+            "limitations": "",
+            "future_directions": ""
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2505.23662v2",
+        "title": "ToolHaystack: Stress-Testing Tool-Augmented Language Models in Realistic Long-Term Interactions",
+        "authors": "Beong-woo Kwak, Minju Kim, Dongha Lim, Hyungjoo Chae, Dongjin Kang, Sunghwan Kim, Dongil Yang, Jinyoung Yeo",
+        "abstract": "Large language models (LLMs) have demonstrated strong capabilities in using external tools to address user inquiries. However, most existing evaluations assume tool use in short contexts, offering limited insight into model behavior during realistic long-term interactions. To fill this gap, we introduce ToolHaystack, a benchmark for testing the tool use capabilities in long-term interactions. Each test instance in ToolHaystack includes multiple tasks execution contexts and realistic noise within a continuous conversation, enabling assessment of how well models maintain context and handle various disruptions. By applying this benchmark to 14 state-of-the-art LLMs, we find that while current models perform well in standard multi-turn settings, they often significantly struggle in ToolHaystack, highlighting critical gaps in their long-term robustness not revealed by previous tool benchmarks.",
+        "published": "2025-05-29T17:10:12Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2505.23662v2",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "research_problem": "Evaluating long-term tool use capabilities of LLMs",
+            "methods": [
+                "Benchmark development (ToolHaystack)",
+                "Model evaluation (14 state-of-the-art LLMs)"
+            ],
+            "datasets": [
+                "ToolHaystack benchmark"
+            ],
+            "metrics": [
+                "Model performance in long-term interactions"
+            ],
+            "key_findings": "Current models struggle in ToolHaystack, highlighting gaps in long-term robustness",
+            "limitations": [
+                "Previous tool benchmarks did not reveal long-term robustness issues"
+            ],
+            "future_directions": [
+                "Improving long-term robustness of LLMs"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2510.18170v1",
+        "title": "AgentChangeBench: A Multi-Dimensional Evaluation Framework for Goal-Shift Robustness in Conversational AI",
+        "authors": "Manik Rana, Calissa Man, Anotida Expected Msiiwa, Jeffrey Paine, Kevin Zhu, Sunishchal Dev, Vasu Sharma, Ahan M R",
+        "abstract": "Goal changes are a defining feature of real world multi-turn interactions, yet current agent benchmarks primarily evaluate static objectives or one-shot tool use. We introduce AgentChangeBench, a benchmark explicitly designed to measure how tool augmented language model agents adapt to mid dialogue goal shifts across three enterprise domains. Our framework formalizes evaluation through four complementary metrics: Task Success Rate (TSR) for effectiveness, Tool Use Efficiency (TUE) for reliability, Tool Call Redundancy Rate (TCRR) for wasted effort, and Goal-Shift Recovery Time (GSRT) for adaptation latency. AgentChangeBench comprises 2,835 task sequences and five user personas, each designed to trigger realistic shift points in ongoing workflows. Using this setup, we evaluate several frontier models and uncover sharp contrasts obscured by traditional $\\text{pass}@k$ scores: for example, GPT-4o reaches $92.2\\%$ recovery on airline booking shifts while Gemini collapses to $48.6\\%$, and retail tasks show near perfect parameter validity yet redundancy rates above $80\\%$, revealing major inefficiencies. These findings demonstrate that high raw accuracy does not imply robustness under dynamic goals, and that explicit measurement of recovery time and redundancy is essential. AgentChangeBench establishes a reproducible testbed for diagnosing and improving agent resilience in realistic enterprise settings.",
+        "published": "2025-10-20T23:48:07Z",
+        "categories": "cs.AI, cs.ET, cs.LG, cs.SE, math.OC",
+        "pdf_url": "https://arxiv.org/pdf/2510.18170v1",
+        "insight": {
+            "domain": [
+                "enterprise"
+            ],
+            "research_problem": "measuring how tool augmented language model agents adapt to mid dialogue goal shifts",
+            "methods": [
+                "AgentChangeBench framework",
+                "four complementary metrics: TSR, TUE, TCRR, GSRT"
+            ],
+            "datasets": [
+                "2,835 task sequences",
+                "five user personas"
+            ],
+            "metrics": [
+                "Task Success Rate (TSR)",
+                "Tool Use Efficiency (TUE)",
+                "Tool Call Redundancy Rate (TCRR)",
+                "Goal-Shift Recovery Time (GSRT)"
+            ],
+            "key_findings": [
+                "GPT-4o reaches 92.2% recovery on airline booking shifts",
+                "Gemini collapses to 48.6%",
+                "retail tasks show near perfect parameter validity yet redundancy rates above 80%"
+            ],
+            "limitations": [
+                "high raw accuracy does not imply robustness under dynamic goals"
+            ],
+            "future_directions": [
+                "explicit measurement of recovery time and redundancy is essential"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2601.21558v2",
+        "title": "ASTRA: Automated Synthesis of agentic Trajectories and Reinforcement Arenas",
+        "authors": "Xiaoyu Tian, Haotian Wang, Shuaiting Chen, Hao Zhou, Kaichi Yu, Yudian Zhang, Jade Ouyang, Junxi Yin, Jiong Chen, Baoyan Guo, Lei Zhang, Junjie Tao, Yuansheng Song, Ming Cui, Chengwei Liu",
+        "abstract": "Large language models (LLMs) are increasingly used as tool-augmented agents for multi-step decision making, yet training robust tool-using agents remains challenging. Existing methods still require manual intervention, depend on non-verifiable simulated environments, rely exclusively on either supervised fine-tuning (SFT) or reinforcement learning (RL), and struggle with stable long-horizon, multi-turn learning. To address these challenges, we introduce ASTRA, a fully automated end-to-end framework for training tool-augmented language model agents via scalable data synthesis and verifiable reinforcement learning. ASTRA integrates two complementary components. First, a pipeline that leverages the static topology of tool-call graphs synthesizes diverse, structurally grounded trajectories, instilling broad and transferable tool-use competence. Second, an environment synthesis framework that captures the rich, compositional topology of human semantic reasoning converts decomposed question-answer traces into independent, code-executable, and rule-verifiable environments, enabling deterministic multi-turn RL. Based on this method, we develop a unified training methodology that integrates SFT with online RL using trajectory-level rewards to balance task completion and interaction efficiency. Experiments on multiple agentic tool-use benchmarks demonstrate that ASTRA-trained models achieve state-of-the-art performance at comparable scales, approaching closed-source systems while preserving core reasoning ability. We release the full pipelines, environments, and trained models at https://github.com/LianjiaTech/astra.",
+        "published": "2026-01-29T11:22:23Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2601.21558v2",
+        "insight": {
+            "domain": [
+                "Language Models",
+                "Artificial Intelligence",
+                "Multi-Step Decision Making"
+            ],
+            "research_problem": "Training robust tool-using agents",
+            "methods": [
+                "Scalable data synthesis",
+                "Verifiable reinforcement learning",
+                "Supervised fine-tuning (SFT)",
+                "Reinforcement learning (RL)"
+            ],
+            "datasets": [
+                "Agentic tool-use benchmarks"
+            ],
+            "metrics": [
+                "Task completion",
+                "Interaction efficiency"
+            ],
+            "key_findings": "ASTRA-trained models achieve state-of-the-art performance at comparable scales",
+            "limitations": [
+                "Requires manual intervention",
+                "Depends on non-verifiable simulated environments",
+                "Struggles with stable long-horizon, multi-turn learning"
+            ],
+            "future_directions": [
+                "Improving scalability and transferability of tool-use competence"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2510.06825v2",
+        "title": "Adaptive Tool Generation with Models as Tools and Reinforcement Learning",
+        "authors": "Chenpeng Wang, Xiaojie Cheng, Chunye Wang, Linfeng Yang, Lei Zhang",
+        "abstract": "Tool-augmented language models have demonstrated strong capabilities, but their reliance on live API access creates scalability and reliability challenges during training and deployment. We propose MTR, a simulation-first training framework for tool-augmented reasoning. Instead of relying on live APIs, MTR learns from complete ReAct traces with schema-validated, simulated observations. Our approach operates through a multi-agent architecture where a ToolMaker generates task-specific, OpenAI-compatible tool interfaces, an AutoAgent produces structured think-act-observe sequences, and a ToolActor simulates realistic responses. Training proceeds in two stages: Stage-1 Supervised Fine-Tuning (SFT) teaches 'trace grammar' from complete reasoning sequences; Stage-2 Group Relative Policy Optimization (GRPO) optimizes strategy with a composite trace reward that balances answer correctness and internal consistency. Across four multi-hop QA benchmarks (HotpotQA, MuSiQue, 2WikiMultiHopQA, Bamboogle), MTR attains competitive Exact Match (EM) scores to live-API systems and excels on reasoning-intensive tasks, suggesting that effective tool reasoning can be learned from structured traces without live interactions.",
+        "published": "2025-10-08T09:48:50Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2510.06825v2",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "research_problem": "Scalability and reliability challenges in training and deployment of tool-augmented language models",
+            "methods": [
+                "Simulation-first training framework",
+                "Multi-agent architecture",
+                "ToolMaker",
+                "AutoAgent",
+                "ToolActor",
+                "Stage-1 Supervised Fine-Tuning (SFT)",
+                "Stage-2 Group Relative Policy Optimization (GRPO)"
+            ],
+            "datasets": [
+                "HotpotQA",
+                "MuSiQue",
+                "2WikiMultiHopQA",
+                "Bamboogle"
+            ],
+            "metrics": [
+                "Exact Match (EM) scores"
+            ],
+            "key_findings": "MTR attains competitive Exact Match (EM) scores to live-API systems and excels on reasoning-intensive tasks",
+            "limitations": "",
+            "future_directions": ""
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2602.21265v1",
+        "title": "ToolMATH: A Math Tool Benchmark for Realistic Long-Horizon Multi-Tool Reasoning",
+        "authors": "Hyeonje Choi, Jeongsoo Lee, Hyojun Lee, Jay-Yoon Lee",
+        "abstract": "We introduce \\ToolMATH, a math-grounded benchmark that evaluates tool-augmented language models in realistic multi-tool environments where the output depends on calling schema-specified tools and sustaining multi-step execution. It turns math problems into a controlled, correctness-checkable benchmark with tool sets, enabling systematic evaluation of model reliability under (1) large, overlapping tool catalogs and (2) the absence of the intended capability. \\ToolMATH provides actionable diagnostic evidence of failure modes in tool-augmented agents, helping identify the control mechanisms required for robustness. \\ToolMATH roughly contains 8k questions and 12k tools; we provide an additional hard-set \\ToolMATHHard with questions and tools. Our evaluation reveals that the key failure factor is due to the inability to reason, leading to the accumulation of intermediate results' errors and constrain later decisions. Tool-list redundancy do not simply add noise, but amplify small early deviations into irreversible execution drift. The benchmark highlights that when the intended capability is missing, distractor tools can sometimes serve as partial substitutes in solution paths, yet they can also mislead models into ungrounded tool trajectories. Finally, comparisons between tool-use protocols emphasize that improvements come less from local action selection and more from long-range plan coherence and disciplined use of observations.",
+        "published": "2026-02-24T09:23:12Z",
+        "categories": "cs.CL, cs.LG, cs.SE",
+        "pdf_url": "https://arxiv.org/pdf/2602.21265v1",
+        "insight": {
+            "raw_output": "{\n\"domain\": [\"math\", \"tool-augmented language models\", \"multi-tool environments\"],\n\"research_problem\": \"Evaluating tool-augmented language models in realistic multi-tool environments\",\n\"methods\": [\"controlled, correctness-checkable benchmark\", \"tool sets\"],\n\"datasets\": [\"\\ToolMATH\", \"\\ToolMATHHard\"],\n\"metrics\": [\"model reliability\", \"robustness\"],\n\"key_findings\": [\"inability to reason leads to accumulation of intermediate results' errors\", \"tool-list redundancy amplifies small early deviations\", \"distractor tools can serve as partial substitutes or mislead models\"],\n\"limitations\": [\"absence of intended capability\", \"tool-list redundancy\"],\n\"future_directions\": [\"improving long-range plan coherence and disciplined use of observations\"]\n}"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"tool augmented language model\"",
+        "paper_id": "http://arxiv.org/abs/2509.26553v2",
+        "title": "Towards Reliable Benchmarking: A Contamination Free, Controllable Evaluation Framework for Multi-step LLM Function Calling",
+        "authors": "Seiji Maekawa, Jackson Hassell, Pouya Pezeshkpour, Tom Mitchell, Estevam Hruschka",
+        "abstract": "Existing benchmarks for tool-augmented language models (TaLMs) lack fine-grained control over task difficulty and remain vulnerable to data contamination. We present FuncBenchGen, a unified, contamination-free framework that evaluates TaLMs by generating synthetic multi-step tool-use tasks to stress-test TaLMs. The key idea is to cast tool use as traversal over a hidden function-dependency DAG where models must infer the correct sequence of calls to compute a target value. FuncBenchGen allows precise control over task difficulty (e.g., graph size, dependency depth, and distractor functions) while avoiding pretraining/test-time leakage. Our evaluation demonstrates reasoning-optimized models consistently outperform general-purpose models with GPT-5 significantly outperforming other available models. Performance declines sharply as dependency depth increases. Furthermore, connected distractors -- irrelevant functions sharing type-compatible variables with relevant functions -- prove especially difficult to handle. Also, strong models often make syntactically valid function calls but propagate incorrect or stale argument values across steps, revealing brittle state tracking by LLMs in multi-turn tool use. Motivated by this observation, we introduce a simple mitigation strategy that explicitly restates prior variable values to the agent at each step. Surprisingly, this lightweight change yields substantial gains across models. e.g., yielding an improvement in success rate from 62.5% to 81.3% for GPT-5.",
+        "published": "2025-09-30T17:21:17Z",
+        "categories": "cs.CL, cs.PL",
+        "pdf_url": "https://arxiv.org/pdf/2509.26553v2",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Tool-Augmented Language Models"
+            ],
+            "research_problem": "Evaluating tool-augmented language models (TaLMs) with fine-grained control over task difficulty and avoiding data contamination",
+            "methods": [
+                "Generating synthetic multi-step tool-use tasks",
+                "Traversing a hidden function-dependency DAG"
+            ],
+            "datasets": [
+                "Synthetic multi-step tool-use tasks"
+            ],
+            "metrics": [
+                "Success rate"
+            ],
+            "key_findings": [
+                "Reasoning-optimized models outperform general-purpose models",
+                "Performance declines sharply as dependency depth increases",
+                "Connected distractors are difficult to handle",
+                "LLMs have brittle state tracking in multi-turn tool use"
+            ],
+            "limitations": [
+                "Models struggle with propagating incorrect or stale argument values"
+            ],
+            "future_directions": [
+                "Mitigation strategy: explicitly restating prior variable values to the agent at each step"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2509.18420v1",
+        "title": "Instruction-Following Evaluation in Function Calling for Large Language Models",
+        "authors": "Nikolai Skripko",
+        "abstract": "Function calling is a core capability of large language models, essential for AI agents. Existing benchmarks such as the Berkeley Function Calling Leaderboard (BFCL), tau^2-Bench (arXiv:2506.07982), and ACEBench (arXiv:2501.12851) evaluate argument correctness but do not test adherence to format instructions embedded in parameter descriptions, such as enclosing values in double quotes or using ISO date formats.\n  We introduce IFEval-FC, a benchmark inspired by IFEval (arXiv:2311.07911) that assesses precise instruction following in function calling. IFEval-FC encodes verifiable formats directly within JSON schema descriptions, for example specifying that a value must not contain punctuation. It includes 750 test cases, each consisting of a function with an embedded format for one of its input parameters and a corresponding user query. Evaluation is fully algorithmic, ensuring objectivity, reproducibility, and scalability.\n  Our results show that even state-of-the-art proprietary models, including GPT-5 and Claude 4.1 Opus, frequently fail to follow basic formatting rules, highlighting a practical limitation for real-world agent systems. The complete codebase and data are publicly available at https://github.com/Skripkon/IFEval-FC.",
+        "published": "2025-09-22T21:04:39Z",
+        "categories": "cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2509.18420v1",
+        "insight": {
+            "domain": [
+                "AI",
+                "large language models",
+                "function calling"
+            ],
+            "research_problem": "Evaluating precise instruction following in function calling",
+            "methods": [
+                "IFEval-FC benchmark",
+                "JSON schema descriptions",
+                "algorithmic evaluation"
+            ],
+            "datasets": [
+                "750 test cases"
+            ],
+            "metrics": [
+                "adherence to format instructions"
+            ],
+            "key_findings": [
+                "State-of-the-art models frequently fail to follow basic formatting rules"
+            ],
+            "limitations": [
+                "Existing benchmarks do not test adherence to format instructions"
+            ],
+            "future_directions": [
+                "Improving function calling capabilities in AI agents"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2601.06937v1",
+        "title": "mind_call: A Dataset for Mental Health Function Calling with Large Language Models",
+        "authors": "Fozle Rabbi Shafi, M. Anwar Hossain, Salimur Choudhury",
+        "abstract": "Large Language Model (LLM)-based systems increasingly rely on function calling to enable structured and controllable interaction with external data sources, yet existing datasets do not address mental health-oriented access to wearable sensor data. This paper presents a synthetic function-calling dataset designed for mental health assistance grounded in wearable health signals such as sleep, physical activity, cardiovascular measures, stress indicators, and metabolic data. The dataset maps diverse natural language queries to standardized API calls derived from a widely adopted health data schema. Each sample includes a user query, a query category, an explicit reasoning step, a normalized temporal parameter, and a target function. The dataset covers explicit, implicit, behavioral, symptom-based, and metaphorical expressions, which reflect realistic mental health-related user interactions. This resource supports research on intent grounding, temporal reasoning, and reliable function invocation in LLM-based mental health agents and is publicly released to promote reproducibility and future work.",
+        "published": "2026-01-11T14:52:57Z",
+        "categories": "cs.AI, cs.LG",
+        "pdf_url": "https://arxiv.org/pdf/2601.06937v1",
+        "insight": {
+            "domain": [
+                "Mental Health",
+                "Wearable Sensor Data",
+                "Large Language Model"
+            ],
+            "research_problem": "Mental health-oriented access to wearable sensor data",
+            "methods": [
+                "Synthetic function-calling dataset",
+                "Health data schema"
+            ],
+            "datasets": [
+                "Synthetic function-calling dataset"
+            ],
+            "metrics": [
+                "Intent grounding",
+                "Temporal reasoning",
+                "Reliable function invocation"
+            ],
+            "key_findings": "Dataset covers explicit, implicit, behavioral, symptom-based, and metaphorical expressions",
+            "limitations": "",
+            "future_directions": "Promote reproducibility and future work"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2407.17915v4",
+        "title": "The Dark Side of Function Calling: Pathways to Jailbreaking Large Language Models",
+        "authors": "Zihui Wu, Haichang Gao, Jianping He, Ping Wang",
+        "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities, but their power comes with significant security considerations. While extensive research has been conducted on the safety of LLMs in chat mode, the security implications of their function calling feature have been largely overlooked. This paper uncovers a critical vulnerability in the function calling process of LLMs, introducing a novel \"jailbreak function\" attack method that exploits alignment discrepancies, user coercion, and the absence of rigorous safety filters. Our empirical study, conducted on six state-of-the-art LLMs including GPT-4o, Claude-3.5-Sonnet, and Gemini-1.5-pro, reveals an alarming average success rate of over 90\\% for this attack. We provide a comprehensive analysis of why function calls are susceptible to such attacks and propose defensive strategies, including the use of defensive prompts. Our findings highlight the urgent need for enhanced security measures in the function calling capabilities of LLMs, contributing to the field of AI safety by identifying a previously unexplored risk, designing an effective attack method, and suggesting practical defensive measures. Our code is available at https://github.com/wooozihui/jailbreakfunction.",
+        "published": "2024-07-25T10:09:21Z",
+        "categories": "cs.CR, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2407.17915v4",
+        "insight": {
+            "domain": [
+                "AI",
+                "Security",
+                "Language Models"
+            ],
+            "research_problem": "Security implications of function calling feature in Large Language Models (LLMs)",
+            "methods": [
+                "Empirical study",
+                "Comprehensive analysis",
+                "Proposed defensive strategies"
+            ],
+            "datasets": [
+                "Six state-of-the-art LLMs: GPT-4o, Claude-3.5-Sonnet, Gemini-1.5-pro"
+            ],
+            "metrics": [
+                "Average success rate of over 90% for the attack"
+            ],
+            "key_findings": "Critical vulnerability in function calling process of LLMs, novel 'jailbreak function' attack method",
+            "limitations": [
+                "Absence of rigorous safety filters"
+            ],
+            "future_directions": [
+                "Enhanced security measures in function calling capabilities of LLMs"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2504.20348v2",
+        "title": "CarbonCall: Sustainability-Aware Function Calling for Large Language Models on Edge Devices",
+        "authors": "Varatheepan Paramanayakam, Andreas Karatzas, Iraklis Anagnostopoulos, Dimitrios Stamoulis",
+        "abstract": "Large Language Models (LLMs) enable real-time function calling in edge AI systems but introduce significant computational overhead, leading to high power consumption and carbon emissions. Existing methods optimize for performance while neglecting sustainability, making them inefficient for energy-constrained environments. We introduce CarbonCall, a sustainability-aware function-calling framework that integrates dynamic tool selection, carbon-aware execution, and quantized LLM adaptation. CarbonCall adjusts power thresholds based on real-time carbon intensity forecasts and switches between model variants to sustain high tokens-per-second throughput under power constraints. Experiments on an NVIDIA Jetson AGX Orin show that CarbonCall reduces carbon emissions by up to 52%, power consumption by 30%, and execution time by 30%, while maintaining high efficiency.",
+        "published": "2025-04-29T01:37:08Z",
+        "categories": "cs.PF, cs.AI, eess.SY",
+        "pdf_url": "https://arxiv.org/pdf/2504.20348v2",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Edge AI",
+                "Sustainability"
+            ],
+            "research_problem": "Optimizing function calling in edge AI systems for sustainability while maintaining performance",
+            "methods": [
+                "Dynamic tool selection",
+                "Carbon-aware execution",
+                "Quantized LLM adaptation"
+            ],
+            "datasets": [
+                "NVIDIA Jetson AGX Orin"
+            ],
+            "metrics": [
+                "Carbon emissions",
+                "Power consumption",
+                "Execution time"
+            ],
+            "key_findings": "CarbonCall reduces carbon emissions by up to 52%, power consumption by 30%, and execution time by 30%",
+            "limitations": "None mentioned",
+            "future_directions": "Further optimization and adaptation to various edge AI systems"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2410.18890v1",
+        "title": "Improving Small-Scale Large Language Models Function Calling for Reasoning Tasks",
+        "authors": "Graziano A. Manduzio, Federico A. Galatolo, Mario G. C. A. Cimino, Enzo Pasquale Scilingo, Lorenzo Cominelli",
+        "abstract": "Recent advancements in Large Language Models (LLMs) have demonstrated exceptional capabilities in natural language understanding and generation. While these models excel in general complex reasoning tasks, they still face challenges in mathematical problem-solving and logical reasoning. To address these limitations, researchers have explored function calling abilities, allowing LLMs to execute provided functions and utilize their outputs for task completion. However, concentrating on specific tasks can be very inefficient for large-scale LLMs to be used, because of the expensive cost of training and inference stages they need in terms of computational resources. This study introduces a novel framework for training smaller language models in function calling, focusing on specific logical and mathematical reasoning tasks. The approach aims to improve performances of small-scale models for these tasks using function calling, ensuring a high level of accuracy. Our framework employs an agent that, given a problem and a set of callable functions, queries the LLM by injecting a description and examples of the usable functions into the prompt and managing their calls in a step-by-step reasoning chain. This process is used to create a dataset of correct and incorrect reasoning chain chat completions from a large-scale LLM. This dataset is used to train a smaller LLM using Reinforcement Learning from Human Feedback (RLHF), specifically employing the Direct Preference Optimization (DPO) technique. Experimental results demonstrate how the proposed approach balances the trade-off between model size and performance, improving the ability of function calling for reasoning tasks, in smaller models.",
+        "published": "2024-10-24T16:27:35Z",
+        "categories": "cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2410.18890v1",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "research_problem": "Improving the performance of small-scale language models in function calling for logical and mathematical reasoning tasks",
+            "methods": [
+                "Reinforcement Learning from Human Feedback (RLHF)",
+                "Direct Preference Optimization (DPO)"
+            ],
+            "datasets": [
+                "Dataset of correct and incorrect reasoning chain chat completions from a large-scale LLM"
+            ],
+            "metrics": [
+                "Model size",
+                "Performance"
+            ],
+            "key_findings": "The proposed approach balances the trade-off between model size and performance, improving the ability of function calling for reasoning tasks in smaller models",
+            "limitations": "Large-scale LLMs are expensive to train and infer, making them inefficient for large-scale use",
+            "future_directions": "Further research is needed to explore the application of this approach to other tasks and domains"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2402.10466v4",
+        "title": "Large Language Models as Zero-shot Dialogue State Tracker through Function Calling",
+        "authors": "Zekun Li, Zhiyu Zoey Chen, Mike Ross, Patrick Huber, Seungwhan Moon, Zhaojiang Lin, Xin Luna Dong, Adithya Sagar, Xifeng Yan, Paul A. Crook",
+        "abstract": "Large language models (LLMs) are increasingly prevalent in conversational systems due to their advanced understanding and generative capabilities in general contexts. However, their effectiveness in task-oriented dialogues (TOD), which requires not only response generation but also effective dialogue state tracking (DST) within specific tasks and domains, remains less satisfying. In this work, we propose a novel approach FnCTOD for solving DST with LLMs through function calling. This method improves zero-shot DST, allowing adaptation to diverse domains without extensive data collection or model tuning. Our experimental results demonstrate that our approach achieves exceptional performance with both modestly sized open-source and also proprietary LLMs: with in-context prompting it enables various 7B or 13B parameter models to surpass the previous state-of-the-art (SOTA) achieved by ChatGPT, and improves ChatGPT's performance beating the SOTA by 5.6% average joint goal accuracy (JGA). Individual model results for GPT-3.5 and GPT-4 are boosted by 4.8% and 14%, respectively. We also show that by fine-tuning on a small collection of diverse task-oriented dialogues, we can equip modestly sized models, specifically a 13B parameter LLaMA2-Chat model, with function-calling capabilities and DST performance comparable to ChatGPT while maintaining their chat capabilities. We have made the code publicly available at https://github.com/facebookresearch/FnCTOD",
+        "published": "2024-02-16T06:13:18Z",
+        "categories": "cs.CL, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2402.10466v4",
+        "insight": {
+            "domain": [
+                "conversational systems",
+                "task-oriented dialogues",
+                "dialogue state tracking"
+            ],
+            "research_problem": "Improving the effectiveness of large language models in task-oriented dialogues",
+            "methods": [
+                "function calling",
+                "in-context prompting",
+                "fine-tuning"
+            ],
+            "datasets": [
+                "open-source",
+                "proprietary",
+                "task-oriented dialogues"
+            ],
+            "metrics": [
+                "joint goal accuracy (JGA)"
+            ],
+            "key_findings": "FnCTOD achieves exceptional performance with both modestly sized open-source and proprietary LLMs, surpassing the previous state-of-the-art (SOTA) achieved by ChatGPT",
+            "limitations": "",
+            "future_directions": ""
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2412.07017v1",
+        "title": "Asynchronous LLM Function Calling",
+        "authors": "In Gim, Seung-seob Lee, Lin Zhong",
+        "abstract": "Large language models (LLMs) use function calls to interface with external tools and data source. However, the current approach to LLM function calling is inherently synchronous, where each call blocks LLM inference, limiting LLM operation and concurrent function execution. In this work, we propose AsyncLM, a system for asynchronous LLM function calling. AsyncLM improves LLM's operational efficiency by enabling LLMs to generate and execute function calls concurrently. Instead of waiting for each call's completion, AsyncLM introduces an interrupt mechanism to asynchronously notify the LLM in-flight when function calls return. We design an in-context protocol for function calls and interrupts, provide fine-tuning strategy to adapt LLMs to the interrupt semantics, and implement these mechanisms efficiently on LLM inference process. We demonstrate that AsyncLM can reduce end-to-end task completion latency from 1.6x-5.4x compared to synchronous function calling on a set of benchmark tasks in the Berkeley function calling leaderboard (BFCL). Furthermore, we discuss how interrupt mechanisms can be extended to enable novel human-LLM or LLM-LLM interactions.",
+        "published": "2024-12-09T21:53:10Z",
+        "categories": "cs.CL, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2412.07017v1",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "research_problem": "Improving operational efficiency of Large Language Models (LLMs) through asynchronous function calling",
+            "methods": [
+                "AsyncLM system",
+                "In-context protocol for function calls and interrupts",
+                "Fine-tuning strategy for adapting LLMs to interrupt semantics"
+            ],
+            "datasets": [
+                "Berkeley function calling leaderboard (BFCL)"
+            ],
+            "metrics": [
+                "End-to-end task completion latency"
+            ],
+            "key_findings": "AsyncLM can reduce end-to-end task completion latency by 1.6x-5.4x compared to synchronous function calling",
+            "limitations": "",
+            "future_directions": "Enabling novel human-LLM or LLM-LLM interactions through interrupt mechanisms"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2508.15214v3",
+        "title": "Self-Guided Function Calling in Large Language Models via Stepwise Experience Recall",
+        "authors": "Sijia Cui, Aiyao He, Shuai Xu, Hongming Zhang, Yanna Wang, Qingyang Zhang, Yajing Wang, Bo Xu",
+        "abstract": "Function calling enables large language models (LLMs) to interact with external systems by leveraging tools and APIs. When faced with multi-step tool usage, LLMs still struggle with tool selection, parameter generation, and tool-chain planning. Existing methods typically rely on manually designing task-specific demonstrations, or retrieving from a curated library. These approaches demand substantial expert effort and prompt engineering becomes increasingly complex and inefficient as tool diversity and task difficulty scale. To address these challenges, we propose a self-guided method, Stepwise Experience Recall (SEER), which performs fine-grained, stepwise retrieval from a continually updated experience pool. Instead of relying on static or manually curated library, SEER incrementally augments the experience pool with past successful trajectories, enabling continuous expansion of the pool and improved model performance over time. Evaluated on the ToolQA benchmark, SEER achieves an average improvement of 6.1% on easy and 4.7% on hard questions. We further test SEER on $τ$-bench, which includes two real-world domains. Powered by Qwen2.5-7B and Qwen2.5-72B models, SEER demonstrates substantial accuracy gains of 7.44% and 23.38%, respectively.",
+        "published": "2025-08-21T03:56:38Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2508.15214v3",
+        "insight": {
+            "domain": [
+                "large language models",
+                "tool usage",
+                "multi-step tool usage"
+            ],
+            "research_problem": "LLMs struggle with tool selection, parameter generation, and tool-chain planning for multi-step tool usage",
+            "methods": [
+                "Stepwise Experience Recall (SEER)",
+                "fine-grained, stepwise retrieval from a continually updated experience pool"
+            ],
+            "datasets": [
+                "ToolQA benchmark",
+                "$τ$-bench"
+            ],
+            "metrics": [
+                "average improvement",
+                "accuracy gains"
+            ],
+            "key_findings": "SEER achieves an average improvement of 6.1% on easy and 4.7% on hard questions, and accuracy gains of 7.44% and 23.38% on $τ$-bench",
+            "limitations": "none mentioned",
+            "future_directions": "none mentioned"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2505.20192v3",
+        "title": "FunReason: Enhancing Large Language Models' Function Calling via Self-Refinement Multiscale Loss and Automated Data Refinement",
+        "authors": "Bingguang Hao, ZengZhuang Xu, Maolin Wang, Yuntao Wen, Yicheng Chen, Cunyin Peng, Long Chen, Dong Wang, Xiangyu Zhao, Jinjie Gu, Chenyi Zhuang, Ji Zhang",
+        "abstract": "The integration of large language models (LLMs) with function calling has emerged as a crucial capability for enhancing their practical utility in real-world applications. However, effectively combining reasoning processes with accurate function execution remains a significant challenge. Traditional training approaches often struggle to balance the detailed reasoning steps with the precision of function calls, leading to suboptimal performance. To address these limitations, we introduce FunReason, a novel framework that enhances LLMs' function calling capabilities through an automated data refinement strategy and a Self-Refinement Multiscale Loss (SRML) approach. FunReason leverages LLMs' natural reasoning abilities to generate high-quality training examples, focusing on query parseability, reasoning coherence, and function call precision. The SRML approach dynamically balances the contribution of reasoning processes and function call accuracy during training, addressing the inherent trade-off between these two critical aspects. FunReason achieves performance comparable to GPT-4o while effectively mitigating catastrophic forgetting during fine-tuning. FunReason provides a comprehensive solution for enhancing LLMs' function calling capabilities by introducing a balanced training methodology and a data refinement pipeline. For code and dataset, please refer to our repository at GitHub https://github.com/BingguangHao/FunReason",
+        "published": "2025-05-26T16:38:06Z",
+        "categories": "cs.LG, cs.IR",
+        "pdf_url": "https://arxiv.org/pdf/2505.20192v3",
+        "insight": {
+            "domain": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "research_problem": "Effectively combining reasoning processes with accurate function execution in large language models (LLMs)",
+            "methods": [
+                "Automated data refinement strategy",
+                "Self-Refinement Multiscale Loss (SRML) approach"
+            ],
+            "datasets": [
+                "Not specified"
+            ],
+            "metrics": [
+                "Performance comparable to GPT-4o",
+                "Mitigation of catastrophic forgetting during fine-tuning"
+            ],
+            "key_findings": "FunReason achieves performance comparable to GPT-4o while effectively mitigating catastrophic forgetting during fine-tuning",
+            "limitations": "Traditional training approaches often struggle to balance detailed reasoning steps with function call precision",
+            "future_directions": "Enhancing LLMs' function calling capabilities through a balanced training methodology and data refinement pipeline"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"function calling\" AND all:\"large language model\"",
+        "paper_id": "http://arxiv.org/abs/2504.00914v1",
+        "title": "On the Robustness of Agentic Function Calling",
+        "authors": "Ella Rabinovich, Ateret Anaby-Tavor",
+        "abstract": "Large Language Models (LLMs) are increasingly acting as autonomous agents, with function calling (FC) capabilities enabling them to invoke specific tools for tasks. While prior research has primarily focused on improving FC accuracy, little attention has been given to the robustness of these agents to perturbations in their input. We introduce a benchmark assessing FC robustness in two key areas: resilience to naturalistic query variations, and stability in function calling when the toolkit expands with semantically related tools. Evaluating best-performing FC models on a carefully expanded subset of the Berkeley function calling leaderboard (BFCL), we identify critical weaknesses in existing evaluation methodologies, and highlight areas for improvement in real-world agentic deployments.",
+        "published": "2025-04-01T15:48:26Z",
+        "categories": "cs.CL",
+        "pdf_url": "https://arxiv.org/pdf/2504.00914v1",
+        "insight": {
+            "domain": [
+                "Large Language Models",
+                "Autonomous Agents"
+            ],
+            "research_problem": "Assessing the robustness of LLMs to perturbations in their input",
+            "methods": [
+                "Benchmarking",
+                "Evaluating best-performing FC models"
+            ],
+            "datasets": [
+                "Berkeley function calling leaderboard (BFCL)"
+            ],
+            "metrics": [
+                "Resilience to naturalistic query variations",
+                "Stability in function calling"
+            ],
+            "key_findings": "Critical weaknesses in existing evaluation methodologies",
+            "limitations": [
+                "Existing evaluation methodologies are inadequate"
+            ],
+            "future_directions": [
+                "Improving real-world agentic deployments"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2410.07283v1",
+        "title": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+        "authors": "Donghyun Lee, Mo Tiwari",
+        "abstract": "As Large Language Models (LLMs) grow increasingly powerful, multi-agent systems are becoming more prevalent in modern AI applications. Most safety research, however, has focused on vulnerabilities in single-agent LLMs. These include prompt injection attacks, where malicious prompts embedded in external content trick the LLM into executing unintended or harmful actions, compromising the victim's application. In this paper, we reveal a more dangerous vector: LLM-to-LLM prompt injection within multi-agent systems. We introduce Prompt Infection, a novel attack where malicious prompts self-replicate across interconnected agents, behaving much like a computer virus. This attack poses severe threats, including data theft, scams, misinformation, and system-wide disruption, all while propagating silently through the system. Our extensive experiments demonstrate that multi-agent systems are highly susceptible, even when agents do not publicly share all communications. To address this, we propose LLM Tagging, a defense mechanism that, when combined with existing safeguards, significantly mitigates infection spread. This work underscores the urgent need for advanced security measures as multi-agent LLM systems become more widely adopted.",
+        "published": "2024-10-09T11:01:29Z",
+        "categories": "cs.MA, cs.AI, cs.CR",
+        "pdf_url": "https://arxiv.org/pdf/2410.07283v1",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Security"
+            ],
+            "research_problem": "LLM-to-LLM prompt injection within multi-agent systems",
+            "methods": [
+                "Experiments",
+                "Proposed defense mechanism: LLM Tagging"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": [
+                "Multi-agent systems are highly susceptible to LLM-to-LLM prompt injection",
+                "LLM Tagging significantly mitigates infection spread"
+            ],
+            "limitations": [],
+            "future_directions": [
+                "Advanced security measures are needed for multi-agent LLM systems"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2507.22758v1",
+        "title": "MASCA: LLM based-Multi Agents System for Credit Assessment",
+        "authors": "Gautam Jajoo, Pranjal A Chitale, Saksham Agarwal",
+        "abstract": "Recent advancements in financial problem-solving have leveraged LLMs and agent-based systems, with a primary focus on trading and financial modeling. However, credit assessment remains an underexplored challenge, traditionally dependent on rule-based methods and statistical models. In this paper, we introduce MASCA, an LLM-driven multi-agent system designed to enhance credit evaluation by mirroring real-world decision-making processes. The framework employs a layered architecture where specialized LLM-based agents collaboratively tackle sub-tasks. Additionally, we integrate contrastive learning for risk and reward assessment to optimize decision-making. We further present a signaling game theory perspective on hierarchical multi-agent systems, offering theoretical insights into their structure and interactions. Our paper also includes a detailed bias analysis in credit assessment, addressing fairness concerns. Experimental results demonstrate that MASCA outperforms baseline approaches, highlighting the effectiveness of hierarchical LLM-based multi-agent systems in financial applications, particularly in credit scoring.",
+        "published": "2025-07-30T15:19:38Z",
+        "categories": "cs.CL, cs.CE, cs.LG",
+        "pdf_url": "https://arxiv.org/pdf/2507.22758v1",
+        "insight": {
+            "domain": [
+                "Finance",
+                "Credit Assessment"
+            ],
+            "research_problem": "Credit assessment using LLMs and agent-based systems",
+            "methods": [
+                "LLM-driven multi-agent system",
+                "Layered architecture",
+                "Contrastive learning",
+                "Signaling game theory"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": "MASCA outperforms baseline approaches in credit scoring",
+            "limitations": [],
+            "future_directions": []
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2506.19481v1",
+        "title": "LLM-based Multi-Agent System for Intelligent Refactoring of Haskell Code",
+        "authors": "Shahbaz Siddeeq, Muhammad Waseem, Zeeshan Rasheed, Md Mahade Hasan, Jussi Rasku, Mika Saari, Henri Terho, Kalle Makela, Kai-Kristian Kemell, Pekka Abrahamsson",
+        "abstract": "Refactoring is a constant activity in software development and maintenance. Scale and maintain software systems are based on code refactoring. However, this process is still labor intensive, as it requires programmers to analyze the codebases in detail to avoid introducing new defects. In this research, we put forward a large language model (LLM)-based multi-agent system to automate the refactoring process on Haskell code. The objective of this research is to evaluate the effect of LLM-based agents in performing structured and semantically accurate refactoring on Haskell code. Our proposed multi-agent system based on specialized agents with distinct roles, including code analysis, refactoring execution, verification, and debugging. To test the effectiveness and practical applicability of the multi-agent system, we conducted evaluations using different open-source Haskell codebases. The results of the experiments carried out showed that the proposed LLM-based multi-agent system could average 11.03% decreased complexity in code, an improvement of 22.46% in overall code quality, and increase performance efficiency by an average of 13.27%. Furthermore, memory allocation was optimized by up to 14.57%. These results highlight the ability of LLM-based multi-agent in managing refactoring tasks targeted toward functional programming paradigms. Our findings hint that LLM-based multi-agent systems integration into the refactoring of functional programming languages can enhance maintainability and support automated development workflows.",
+        "published": "2025-06-24T10:17:34Z",
+        "categories": "cs.SE",
+        "pdf_url": "https://arxiv.org/pdf/2506.19481v1",
+        "insight": {
+            "domain": [
+                "Software Development",
+                "Maintenance",
+                "Code Refactoring"
+            ],
+            "research_problem": "Automating the refactoring process in software development and maintenance",
+            "methods": [
+                "Large Language Model (LLM)-based multi-agent system",
+                "Specialized agents with distinct roles"
+            ],
+            "datasets": [
+                "Open-source Haskell codebases"
+            ],
+            "metrics": [
+                "Decreased complexity in code",
+                "Overall code quality",
+                "Performance efficiency",
+                "Memory allocation"
+            ],
+            "key_findings": "LLM-based multi-agent system can average 11.03% decreased complexity, 22.46% improvement in overall code quality, 13.27% increase in performance efficiency, and up to 14.57% optimization in memory allocation",
+            "limitations": "",
+            "future_directions": "Integration of LLM-based multi-agent systems into the refactoring of functional programming languages to enhance maintainability and support automated development workflows"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2502.14847v2",
+        "title": "Red-Teaming LLM Multi-Agent Systems via Communication Attacks",
+        "authors": "Pengfei He, Yupin Lin, Shen Dong, Han Xu, Yue Xing, Hui Liu",
+        "abstract": "Large Language Model-based Multi-Agent Systems (LLM-MAS) have revolutionized complex problem-solving capability by enabling sophisticated agent collaboration through message-based communications. While the communication framework is crucial for agent coordination, it also introduces a critical yet unexplored security vulnerability. In this work, we introduce Agent-in-the-Middle (AiTM), a novel attack that exploits the fundamental communication mechanisms in LLM-MAS by intercepting and manipulating inter-agent messages. Unlike existing attacks that compromise individual agents, AiTM demonstrates how an adversary can compromise entire multi-agent systems by only manipulating the messages passing between agents. To enable the attack under the challenges of limited control and role-restricted communication format, we develop an LLM-powered adversarial agent with a reflection mechanism that generates contextually-aware malicious instructions. Our comprehensive evaluation across various frameworks, communication structures, and real-world applications demonstrates that LLM-MAS is vulnerable to communication-based attacks, highlighting the need for robust security measures in multi-agent systems.",
+        "published": "2025-02-20T18:55:39Z",
+        "categories": "cs.CR",
+        "pdf_url": "https://arxiv.org/pdf/2502.14847v2",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Multi-Agent Systems",
+                "Security"
+            ],
+            "research_problem": "Security vulnerability in Large Language Model-based Multi-Agent Systems (LLM-MAS)",
+            "methods": [
+                "Agent-in-the-Middle (AiTM) attack",
+                "LLM-powered adversarial agent",
+                "Reflection mechanism"
+            ],
+            "datasets": [
+                "Various frameworks",
+                "Real-world applications"
+            ],
+            "metrics": [
+                "Vulnerability to communication-based attacks"
+            ],
+            "key_findings": "LLM-MAS is vulnerable to communication-based attacks",
+            "limitations": [
+                "Limited control",
+                "Role-restricted communication format"
+            ],
+            "future_directions": "Robust security measures in multi-agent systems"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2603.00142v1",
+        "title": "Evaluating Theory of Mind and Internal Beliefs in LLM-Based Multi-Agent Systems",
+        "authors": "Adam Kostka, Jarosław A. Chudziak",
+        "abstract": "LLM-based MAS are gaining popularity due to their potential for collaborative problem-solving enhanced by advances in natural language comprehension, reasoning, and planning. Research in Theory of Mind (ToM) and Belief-Desire-Intention (BDI) models has the potential to further improve the agent's interaction and decision-making in such systems. However, collaborative intelligence in dynamic worlds remains difficult to accomplish since LLM performance in multi-agent worlds is extremely variable. Simply adding cognitive mechanisms like ToM and internal beliefs does not automatically result in improved coordination. The interplay between these mechanisms, particularly in relation to formal logic verification, remains largely underexplored in different LLMs. This work investigates: How do internal belief mechanisms, including symbolic solvers and Theory of Mind, influence collaborative decision-making in LLM-based multi-agent systems, and how does the interplay of those components influence system accuracy? We introduce a novel multi-agent architecture integrating ToM, BDI-style internal beliefs, and symbolic solvers for logical verification. We evaluate this architecture in a resource allocation problem with various LLMs and find an intricate interaction between LLM capabilities, cognitive mechanisms, and performance. This work contributes to the area of AI by proposing a novel multi-agent system with ToM, internal beliefs, and symbolic solvers for augmenting collaborative intelligence in multi-agent systems and evaluating its performance under different LLM settings.",
+        "published": "2026-02-24T09:16:17Z",
+        "categories": "cs.MA, cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2603.00142v1",
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Multi-Agent Systems",
+                "Natural Language Processing"
+            ],
+            "research_problem": "Improving collaborative decision-making in LLM-based multi-agent systems",
+            "methods": [
+                "Theory of Mind (ToM)",
+                "Belief-Desire-Intention (BDI) models",
+                "Symbolic solvers",
+                "Formal logic verification"
+            ],
+            "datasets": [
+                "Resource allocation problem"
+            ],
+            "metrics": [
+                "System accuracy"
+            ],
+            "key_findings": "Internal belief mechanisms, including ToM and BDI-style internal beliefs, influence collaborative decision-making in LLM-based multi-agent systems",
+            "limitations": [
+                "LLM performance in multi-agent worlds is extremely variable"
+            ],
+            "future_directions": [
+                "Exploring the interplay between cognitive mechanisms and formal logic verification in different LLMs"
+            ]
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2509.08736v2",
+        "title": "ChemBOMAS: Accelerated BO in Chemistry with LLM-Enhanced Multi-Agent System",
+        "authors": "Dong Han, Zhehong Ai, Pengxiang Cai, Shanya Lu, Jianpeng Chen, Zihao Ye, Shuzhou Sun, Ben Gao, Lingli Ge, Weida Wang, Xiangxin Zhou, Xihui Liu, Mao Su, Wanli Ouyang, Lei Bai, Dongzhan Zhou, Tao Xu, Yuqiang Li, Shufei Zhang",
+        "abstract": "Bayesian optimization (BO) is a powerful tool for scientific discovery in chemistry, yet its efficiency is often hampered by the sparse experimental data and vast search space. Here, we introduce ChemBOMAS: a large language model (LLM)-enhanced multi-agent system that accelerates BO through synergistic data- and knowledge-driven strategies. Firstly, the data-driven strategy involves an 8B-scale LLM regressor fine-tuned on a mere 1% labeled samples for pseudo-data generation, robustly initializing the optimization process. Secondly, the knowledge-driven strategy employs a hybrid Retrieval-Augmented Generation approach to guide LLM in dividing the search space while mitigating LLM hallucinations. An Upper Confidence Bound algorithm then identifies high-potential subspaces within this established partition. Across the LLM-refined subspaces and supported by LLM-generated data, BO achieves the improvement of effectiveness and efficiency. Comprehensive evaluations across multiple scientific benchmarks demonstrate that ChemBOMAS set a new state-of-the-art, accelerating optimization efficiency by up to 5-fold compared to baseline methods.",
+        "published": "2025-09-10T16:24:08Z",
+        "categories": "cs.LG",
+        "pdf_url": "https://arxiv.org/pdf/2509.08736v2",
+        "insight": {
+            "domain": [
+                "chemistry"
+            ],
+            "research_problem": "efficient Bayesian optimization in chemistry",
+            "methods": [
+                "Bayesian optimization",
+                "large language model (LLM)",
+                "multi-agent system",
+                "Upper Confidence Bound algorithm"
+            ],
+            "datasets": [
+                "scientific benchmarks"
+            ],
+            "metrics": [
+                "optimization efficiency"
+            ],
+            "key_findings": "ChemBOMAS accelerates optimization efficiency by up to 5-fold compared to baseline methods",
+            "limitations": "",
+            "future_directions": ""
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2502.11133v1",
+        "title": "MasRouter: Learning to Route LLMs for Multi-Agent Systems",
+        "authors": "Yanwei Yue, Guibin Zhang, Boyang Liu, Guancheng Wan, Kun Wang, Dawei Cheng, Yiyan Qi",
+        "abstract": "Multi-agent systems (MAS) powered by Large Language Models (LLMs) have been demonstrated to push the boundaries of LLM capabilities, yet they often incur significant costs and face challenges in dynamic LLM selection. Current LLM routing methods effectively reduce overhead in single-agent scenarios by customizing LLM selection for each query, but they overlook the critical decisions regarding collaboration modes and agent roles in MAS. In response to this challenge, we first introduce the problem of Multi-Agent System Routing (MASR), which integrates all components of MAS into a unified routing framework. Toward this goal, we propose MasRouter, the first high-performing, cost-effective, and inductive MASR solution. MasRouter employs collaboration mode determination, role allocation, and LLM routing through a cascaded controller network, progressively constructing a MAS that balances effectiveness and efficiency. Extensive experiments demonstrate that MasRouter is (1) high-performing, achieving a $1.8\\%\\sim8.2\\%$ improvement over the state-of-the-art method on MBPP; (2) economical, reducing overhead by up to $52.07\\%$ compared to SOTA methods on HumanEval; and (3) plug-and-play, seamlessly integrating with mainstream MAS frameworks, reducing overhead by $17.21\\%\\sim28.17\\%$ via customized routing. The code is available at https://github.com/yanweiyue/masrouter.",
+        "published": "2025-02-16T14:00:59Z",
+        "categories": "cs.LG, cs.MA",
+        "pdf_url": "https://arxiv.org/pdf/2502.11133v1",
+        "insight": {
+            "raw_output": "{\n\"domain\": [\"Multi-agent systems\", \"Large Language Models\"],\n\"research_problem\": \"Multi-Agent System Routing (MASR)\",\n\"methods\": [\"MasRouter\", \"cascaded controller network\"],\n\"datasets\": [\"MBPP\", \"HumanEval\"],\n\"metrics\": [\"performance improvement\", \"overhead reduction\"],\n\"key_findings\": \"MasRouter achieves a $1.8\\%\\sim8.2\\%$ improvement in performance and reduces overhead by up to $52.07\\%$\",\n\"limitations\": \"\",\n\"future_directions\": \"\"\n}"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2501.14304v2",
+        "title": "MASTER: A Multi-Agent System with LLM Specialized MCTS",
+        "authors": "Bingzheng Gan, Yufan Zhao, Tianyi Zhang, Jing Huang, Yusu Li, Shu Xian Teo, Changwang Zhang, Wei Shi",
+        "abstract": "Large Language Models (LLM) are increasingly being explored for problem-solving tasks. However, their strategic planning capability is often viewed with skepticism. Recent studies have incorporated the Monte Carlo Tree Search (MCTS) algorithm to augment the planning capacity of LLM. Despite its potential, MCTS relies on extensive sampling simulations to approximate the true reward distribution, which leads to two primary issues. Firstly, MCTS is effective for tasks like the Game of Go, where simulation results can yield objective rewards (e.g., 1 for a win and 0 for a loss). However, for tasks such as question answering, the result of a simulation is the answer to the question, which cannot yield an objective reward without the ground truth. Secondly, obtaining statistically significant reward estimations typically requires a sample size exceeding 30 simulations, resulting in excessive token usage and time consumption. To address these challenges, we present the Multi-Agent System with Tactical Execution and Reasoning using LLM Specialized MCTS (MASTER), a novel framework that coordinates agent recruitment and communication through LLM specialized MCTS. This system autonomously adjusts the number of agents based on task complexity and ensures focused communication among them. Comprehensive experiments across various tasks demonstrate the effectiveness of our proposed framework. It achieves 76% accuracy on HotpotQA and 80% on WebShop, setting new state-of-the-art performance on these datasets.",
+        "published": "2025-01-24T08:01:11Z",
+        "categories": "cs.AI",
+        "pdf_url": "https://arxiv.org/pdf/2501.14304v2",
+        "insight": {
+            "domain": [
+                "Large Language Models",
+                "Problem-solving tasks",
+                "Monte Carlo Tree Search",
+                "Multi-Agent Systems"
+            ],
+            "research_problem": "Improving strategic planning capability of Large Language Models using Monte Carlo Tree Search",
+            "methods": [
+                "Monte Carlo Tree Search (MCTS) algorithm",
+                "Multi-Agent System with Tactical Execution and Reasoning using LLM Specialized MCTS (MASTER)"
+            ],
+            "datasets": [
+                "HotpotQA",
+                "WebShop"
+            ],
+            "metrics": [
+                "Accuracy"
+            ],
+            "key_findings": "76% accuracy on HotpotQA and 80% on WebShop",
+            "limitations": [
+                "Excessive token usage and time consumption",
+                "Difficulty in obtaining objective rewards for tasks like question answering"
+            ],
+            "future_directions": "Further research on adapting MASTER to various tasks and environments"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2508.20134v1",
+        "title": "QAgent: An LLM-based Multi-Agent System for Autonomous OpenQASM programming",
+        "authors": "Zhenxiao Fu, Fan Chen, Lei Jiang",
+        "abstract": "Noisy Intermediate-Scale Quantum (NISQ) devices have begun to exhibit early quantum advantages on classically intractable problems, spanning physics simulations to Gaussian boson sampling. Yet, realizing these benefits remains challenging for non-experts, primarily due to the complexities of programming in Open Quantum Assembly Language (OpenQASM). Although Large Language Model (LLM)-based agents have shown promise in automating classical programming workflows, their quantum counterparts have largely been restricted to specialized tasks such as quantum chemistry or error correction. In this paper, we present QAgent, an LLM-powered multi-agent system that fully automates OpenQASM programming. By integrating task planning, in-context few-shot learning, retrieval-augmented generation (RAG) for long-term context, predefined generation tools, and chain-of-thought (CoT) reasoning, the agents systematically improve both compilation and functional correctness. Our evaluations demonstrate substantial improvements: across multiple LLMs of varying sizes, QAgent enhances the accuracy of QASM code generation by 71.6\\% compared to previous static LLM-based approaches. We envision this multi-agent system as a key enabler for democratizing quantum programming, bridging expertise gaps, and accelerating the practical adoption of quantum computing.",
+        "published": "2025-08-26T18:40:02Z",
+        "categories": "cs.AI, cs.ET, quant-ph",
+        "pdf_url": "https://arxiv.org/pdf/2508.20134v1",
+        "insight": {
+            "domain": [
+                "Quantum Computing"
+            ],
+            "research_problem": "Automating OpenQASM programming for non-experts",
+            "methods": [
+                "LLM-powered multi-agent system",
+                "Task planning",
+                "In-context few-shot learning",
+                "Retrieval-augmented generation (RAG)",
+                "Predefined generation tools",
+                "Chain-of-thought (CoT) reasoning"
+            ],
+            "datasets": [],
+            "metrics": [
+                "Accuracy of QASM code generation"
+            ],
+            "key_findings": "QAgent enhances the accuracy of QASM code generation by 71.6% compared to previous static LLM-based approaches",
+            "limitations": [],
+            "future_directions": "Democratizing quantum programming, bridging expertise gaps, and accelerating the practical adoption of quantum computing"
+        }
+    },
+    {
+        "source": "arxiv",
+        "search_query": "all:\"multi agent system\" AND all:\"LLM\"",
+        "paper_id": "http://arxiv.org/abs/2507.23261v2",
+        "title": "DynaSwarm: Dynamically Graph Structure Selection for LLM-based Multi-agent System",
+        "authors": "Hui Yi Leong, Yuqing Wu",
+        "abstract": "Current multi-agent systems (MAS) frameworks often rely on manually designed and static collaboration graph structures, limiting adaptability and performance. To address these limitations, we propose DynaSwarm, a dynamic framework that enhances LLM-based MAS through two key innovations: (1) an actor-critic reinforcement learning (A2C) mechanism to optimize graph structures with improved stability over prior RL methods, and (2) a dynamic graph selector that adaptively chooses the optimal graph structure for each input sample via parameter-efficient LLM fine-tuning. DynaSwarm eliminates the need for rigid, one-fits-all graph architectures, instead leveraging sample-specific idiosyncrasies to dynamically route queries through specialized agent networks. (c) We propose to fine-tune the demonstration retriever to fully exploit the power of in-context learning (ICL). Extensive experiments on question answering, mathematical reasoning, and coding tasks demonstrate that DynaSwarm consistently outperforms state-of-the-art single-agent and MAS baselines across multiple LLM backbones. Our findings highlight the importance of sample-aware structural flexibility in LLM MAS designs.",
+        "published": "2025-07-31T05:52:30Z",
+        "categories": "cs.LG, cs.AI, cs.MA",
+        "pdf_url": "https://arxiv.org/pdf/2507.23261v2",
+        "insight": {
+            "domain": [
+                "Multi-agent systems",
+                "Artificial intelligence",
+                "Machine learning"
+            ],
+            "research_problem": "Limitations of current MAS frameworks relying on manually designed and static collaboration graph structures",
+            "methods": [
+                "Actor-critic reinforcement learning (A2C)",
+                "Dynamic graph selector",
+                "Parameter-efficient LLM fine-tuning",
+                "In-context learning (ICL)"
+            ],
+            "datasets": [
+                "Question answering",
+                "Mathematical reasoning",
+                "Coding tasks"
+            ],
+            "metrics": [
+                "Performance comparison with state-of-the-art single-agent and MAS baselines"
+            ],
+            "key_findings": "DynaSwarm consistently outperforms state-of-the-art single-agent and MAS baselines across multiple LLM backbones",
+            "limitations": [
+                "Rigid, one-fits-all graph architectures"
+            ],
+            "future_directions": [
+                "Fine-tuning the demonstration retriever to fully exploit the power of in-context learning (ICL)"
+            ]
+        }
+    }
+]

@@ -1,0 +1,350 @@
+[
+    {
+        "query": "all:\"LLM pipeline\"",
+        "pmid": "41726500",
+        "title": "To what Degree can LLMs Support Medical Informatics Research? Examining the Interplay of Research Support LLMs with LLM Critics.",
+        "journal": "AMIA ... Annual Symposium proceedings. AMIA Symposium",
+        "doi": null,
+        "abstract": "The rapid development of Large Language Models (LLMs) has opened up new possibilities for their role in supporting research. This study assesses whether LLMs can generate \"thoughtful\" research plans in the domain of Medical Informatics and whether LLM-generated critiques can improve such plans. Using an LLM pipeline, we prompt four LLMs to generate primary research plans. Subsequently, these plans are mutually critiqued and then the LLMs are prompted to refine their outputs based on these critiques. These original and improved responses are then reviewed by human evaluators for errors, hallucinations, etc. We employ ROUGE scores, cosine similarity, and length differences to quantify similarities across responses. Our findings reveal variations in outputs among four LLMs, the impact of critiques, and differences between primary and secondary outputs. All LLMs produce cogent outputs and critiques, integrating feedback when generating improved outputs. Human evaluators can distinguish between primary and secondary responses in most cases.",
+        "keywords": [],
+        "authors": [
+            "Naren Khatwani",
+            "Lijing Wang",
+            "James Geller"
+        ],
+        "insight": {
+            "domain": [
+                "Medical Informatics"
+            ],
+            "research_problem": [
+                "Can LLMs generate thoughtful research plans?",
+                "Can LLM-generated critiques improve research plans?"
+            ],
+            "methods": [
+                "LLM pipeline",
+                "prompting LLMs to generate primary research plans",
+                "mutual critiquing",
+                "refining outputs based on critiques"
+            ],
+            "datasets": [],
+            "metrics": [
+                "ROUGE scores",
+                "cosine similarity",
+                "length differences"
+            ],
+            "key_findings": [
+                "Variations in outputs among four LLMs",
+                "Impact of critiques",
+                "Differences between primary and secondary outputs"
+            ],
+            "limitations": [],
+            "future_directions": []
+        }
+    },
+    {
+        "query": "all:\"LLM pipeline\"",
+        "pmid": "41542661",
+        "title": "Can Large Language Models Reduce the Cost of Extracting Data from Electronic Health Records for Research?",
+        "journal": "medRxiv : the preprint server for health sciences",
+        "doi": "10.64898/2026.01.09.26343792",
+        "abstract": "OBJECTIVE: Much medical data is only available in unstructured electronic health records (EHR). These data can be obtained through manual (human) extraction or programmatic natural language processing (NLP) methods. We estimate that NLP only becomes economically competitive with manual extraction when there are ~6500 EHRs records. We have found that there is interest from clinicians and researchers in using NLP on projects with fewer records. We examine whether a large language model (LLM) can be used to reduce the cost of NLP to make it economically competitive for such projects, and study the feasibility of such framework for accuracy.\nMATERIALS AND METHODS: We developed an NLP pipeline using an off-the-shelf open LLM to extract breast cancer ER, PR, and HER2 biomarker data. Pipeline development stopped when the prompts performances were competitive with manual extraction. The development time and extraction performance were compared to those for an existing rule-based (RB) NLP pipeline. The code for the extraction portion of the LLM pipeline is available at https://github.com/sehagler/llm_biomarker_extraction .\nRESULTS: The LLM pipeline produced performance competitive with manual data extraction with a hands-on development time that was ~38% that of the RB pipeline.\nDISCUSSION: LLMs exhibit lower hands-on development costs compared to standard NLP techniques, but require significant and potentially costly computation resources.\nCONCLUSION: LLMs may potentially allow the economically competitive application of NLP to smaller projects if computation costs can be managed.",
+        "keywords": [],
+        "authors": [
+            "Stuart Hagler",
+            "Mohammad Adibuzzaman",
+            "Shannon K McWeeney",
+            "Aaron Cohen"
+        ],
+        "insight": {
+            "domain": [
+                "Medical",
+                "Healthcare",
+                "Natural Language Processing"
+            ],
+            "research_problem": "Economically competitive application of NLP to smaller projects",
+            "methods": [
+                "Large Language Model (LLM)",
+                "Natural Language Processing (NLP)",
+                "Rule-based (RB) NLP pipeline"
+            ],
+            "datasets": [
+                "Electronic Health Records (EHRs)"
+            ],
+            "metrics": [
+                "Development time",
+                "Extraction performance",
+                "Computation costs"
+            ],
+            "key_findings": "LLMs can reduce hands-on development costs and make NLP economically competitive for smaller projects",
+            "limitations": [
+                "Significant and potentially costly computation resources"
+            ],
+            "future_directions": "Managing computation costs to make LLMs more viable"
+        }
+    },
+    {
+        "query": "all:\"LLM pipeline\"",
+        "pmid": "41244991",
+        "title": "Leveraging Large Language Models with Sequential Prompting to Extract Eye Examination Findings from Free-Text Ophthalmology Notes.",
+        "journal": "Ophthalmology science",
+        "doi": "10.1016/j.xops.2025.100944",
+        "abstract": "PURPOSE: The purpose of this study was to evaluate the ability of general domain large language models (LLMs) to identify slit lamp and fundus examination (FE) findings from free-text clinical notes in electronic health records.\nDESIGN: Retrospective cohort study.\nPARTICIPANTS: Data were obtained from the Stanford Research Repository, which contains progress notes of patients from the Department of Ophthalmology at Stanford University since 2008.\nMETHODS: We assessed a local LLM pipeline, using a novel sequential named entity recognition (NER) prompting approach, for identifying eye examination findings and their lateralities from free-text clinical notes at a single academic center. We compared several local open-source LLMs, including Mistral Nemo 12B, Llama 3.1 8B, and a quantized Llama 3.1 70B. Results were compared to those from a prior study that evaluated Bidirectional Encoder Representations from Transformers (BERT) models fine-tuned on 31 279 weakly labeled ophthalmology progress notes. Testing was conducted on 2 sets: (1) SmartLink-300 templated ophthalmology notes (>5900 entities) and (2) free-text-200 unstructured notes (>3000 entities) from 3 ophthalmologists.\nMAIN OUTCOME MEASURES: Precision, recall, and F1 score for each component in the SLE and FE.\nRESULTS: Llama 3.1 70B was the top-performing model for identifying eye examination findings from SmartLink notes, achieving a microaveraged precision of 0.95, recall of 0.90, and F1 score of 0.92. Llama 3.1 70B performed consistently well across different components of the eye examination, with a microaveraged F1 score of 0.94 for the FE and 0.91 for SLE. For the free-text notes, where fine-tuning a BERT model was not possible, Llama 3.1 70B achieved microaveraged F1 scores of 0.93 with ophthalmologist A notes, 0.94 with ophthalmologist B notes, and 0.96 with ophthalmologist C notes.\nCONCLUSIONS: Sufficiently large LLMs, with our sequential prompting approach, outperformed or performed comparably to BERT models fine-tuned on >30 000 examples on the NER task and demonstrated flexibility by performing robustly on data sets BERT could not be fine-tuned on. Our findings suggest LLMs are capable of efficient, automated, and accurate extraction of relevant information from ophthalmology free-text progress notes.\nFINANCIAL DISCLOSURES: Proprietary or commercial disclosure may be found in the Footnotes and Disclosures at the end of this article.",
+        "keywords": [
+            "AI",
+            "Automated methods",
+            "Eye examination",
+            "Large language models",
+            "Named entity recognition"
+        ],
+        "authors": [
+            "Franklin Y Ruan",
+            "Justin W Lam",
+            "Houri Esmaeilkhanian",
+            "Robert T Chang",
+            "Sophia Y Wang"
+        ],
+        "insight": {
+            "domain": [
+                "Ophthalmology",
+                "Artificial Intelligence",
+                "Natural Language Processing"
+            ],
+            "research_problem": "Evaluating the ability of general domain large language models (LLMs) to identify slit lamp and fundus examination (FE) findings from free-text clinical notes in electronic health records.",
+            "methods": [
+                "Retrospective cohort study",
+                "Sequential named entity recognition (NER) prompting approach",
+                "Local LLM pipeline",
+                "Comparison with BERT models"
+            ],
+            "datasets": [
+                "Stanford Research Repository",
+                "SmartLink-300 templated ophthalmology notes",
+                "free-text-200 unstructured notes"
+            ],
+            "metrics": [
+                "Precision",
+                "Recall",
+                "F1 score"
+            ],
+            "key_findings": "Llama 3.1 70B was the top-performing model for identifying eye examination findings from SmartLink notes, achieving a microaveraged precision of 0.95, recall of 0.90, and F1 score of 0.92.",
+            "limitations": "",
+            "future_directions": ""
+        }
+    },
+    {
+        "query": "all:\"LLM pipeline\"",
+        "pmid": "41208472",
+        "title": "An LLM-Based Tool for Automated Generation of 3D Model Organism Colony Simulations.",
+        "journal": "ACS synthetic biology",
+        "doi": "10.1021/acssynbio.5c00402",
+        "abstract": "We present MicroVerse, a software application based on large language models (LLMs) designed to generate C# scripts simulating three-dimensional colonies of model organisms, including Escherichia coli and Saccharomyces cerevisiae, within the Unity platform. The system, which utilizes fine-tuned LLMs, translates descriptions of desired simulations (organizations, growth rates, and appearance) in natural language into functional C# code. The coupling of artificial intelligence with biological simulation generates intricate dynamics to be simulated. The approach involves using a dual-LLM pipeline (one computing user requests, the other generating code for Unity Data-Oriented Technology Stack (DOTS)), with the goal of making 3D simulation development more democratized. It provides a scalable, customizable option, particularly for users lacking sophisticated programming skills, decreasing manual coding effort and time. This work explains the pipeline architecture and fine-tuning process and demonstrates the system successfully producing functional, scalable simulations, scaling up to cases with more than one million organisms.",
+        "keywords": [
+            "3D colony simulation",
+            "automated code generation",
+            "biological simulation",
+            "large language models",
+            "model organisms",
+            "unity engine"
+        ],
+        "authors": [
+            "Tobías Guerrero Cheuquepán",
+            "Iván Cáceres Satorres",
+            "Bastián Castro Salazar",
+            "Brian Castro Farías",
+            "Martín Gutiérrez Pescarmona"
+        ],
+        "insight": {
+            "domain": [
+                "Computer Science",
+                "Biological Simulation",
+                "Artificial Intelligence"
+            ],
+            "research_problem": "Democratizing 3D simulation development for users lacking sophisticated programming skills",
+            "methods": [
+                "Large Language Models (LLMs)",
+                "Dual-LLM pipeline",
+                "Fine-tuning"
+            ],
+            "datasets": [
+                "Unity platform",
+                "C# scripts"
+            ],
+            "metrics": [
+                "Scalability",
+                "Customizability",
+                "Manual coding effort",
+                "Time"
+            ],
+            "key_findings": "MicroVerse successfully produces functional, scalable simulations, including cases with over one million organisms",
+            "limitations": [],
+            "future_directions": []
+        }
+    },
+    {
+        "query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "pmid": "41228809",
+        "title": "Application of Artificial Intelligence in Predicting Coal Mine Disaster Risks: A Review.",
+        "journal": "Sensors (Basel, Switzerland)",
+        "doi": "10.3390/s25216586",
+        "abstract": "The production environments of coal mines are inherently complex, with interrelated disaster risks that challenge safety management. Current prediction systems struggle with fragmented data, limited mechanistic understanding, and inadequate early warnings, falling short of modern coal mine safety needs. This paper advances the thesis that artificial intelligence, including machine learning, deep learning, and Large Language Model, provides essential tools for overcoming these prediction challenges in coal mining. We review AI-based approaches for forecasting coal and gas outbursts, mine fires, water disasters, roof collapses, and dust disasters, analyzing them through technical principles, application scenarios, and empirical outcomes. The analysis clarifies how AI improves risk prediction accuracy, enhances data integration, and enables smarter decision-making for safety. By examining the five major hazards, we highlight ongoing challenges in AI implementation and outline pathways for future development, emphasizing the importance of large models and autonomous agents. Our findings support the creation of advanced AI-driven safety and early warning systems for coal mines.",
+        "keywords": [
+            "artificial intelligence",
+            "coal mine disaster",
+            "forecasting model",
+            "machine learning",
+            "risk prediction"
+        ],
+        "authors": [
+            "Peiyan Lu",
+            "Yingjie Liu",
+            "Yuntao Liang",
+            "Dawei Cui"
+        ],
+        "insight": {
+            "domain": [
+                "coal mining",
+                "safety management"
+            ],
+            "research_problem": "prediction challenges in coal mining",
+            "methods": [
+                "artificial intelligence",
+                "machine learning",
+                "deep learning",
+                "Large Language Model"
+            ],
+            "datasets": [],
+            "metrics": [
+                "risk prediction accuracy",
+                "data integration"
+            ],
+            "key_findings": "AI improves risk prediction accuracy, enhances data integration, and enables smarter decision-making for safety",
+            "limitations": [
+                "ongoing challenges in AI implementation"
+            ],
+            "future_directions": [
+                "large models",
+                "autonomous agents"
+            ]
+        }
+    },
+    {
+        "query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "pmid": "41046617",
+        "title": "Metacognition for Unknown Situations and Environments (MUSE).",
+        "journal": "Neural networks : the official journal of the International Neural Network Society",
+        "doi": "10.1016/j.neunet.2025.108131",
+        "abstract": "Metacognition, defined as the awareness and regulation of one's cognitive processes, is central to human adaptability in unknown situations. In contrast, current autonomous agents often struggle in novel environments due to their limited capacity for adaptation. We hypothesize that metacognition is a critical missing ingredient in autonomous agents for the cognitive flexibility needed to tackle unfamiliar challenges. Given the broad scope of metacognitive abilities, we focus on competence awareness and strategy selection. To this end, we propose the Metacognition for Unknown Situations and Environments (MUSE) framework to integrate metacognitive processes of self-assessment and self-regulation into autonomous agents. We present two implementations of MUSE: one based on world modeling and another leveraging large language models (LLMs). Our system continually learns to assess its competence on a given task and uses this self-assessment to guide iterative cycles of strategy selection. MUSE agents demonstrate high competence awareness and significant improvements in self-regulation for solving novel, out-of-distribution tasks more effectively compared to model-based reinforcement learning and purely prompt-based LLM agent approaches. This work highlights the promise of approaches inspired by cognitive and neural systems in enabling autonomous agents to adapt to new environments while mitigating the heavy reliance on extensive training data and large models for the current models.",
+        "keywords": [
+            "Agentic AI",
+            "Large Language Model",
+            "Metacognition",
+            "Reinforcement Learning",
+            "Self-Assessment",
+            "Self-Regulation",
+            "World Model"
+        ],
+        "authors": [
+            "Rodolfo Valiente",
+            "Praveen K Pilly"
+        ],
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Autonomous Agents",
+                "Cognitive Science"
+            ],
+            "research_problem": "Improving autonomous agents' adaptability in novel environments",
+            "methods": [
+                "World modeling",
+                "Large language models (LLMs)",
+                "Model-based reinforcement learning",
+                "Prompt-based LLM agent approaches"
+            ],
+            "datasets": [],
+            "metrics": [
+                "Competence awareness",
+                "Self-regulation"
+            ],
+            "key_findings": "MUSE agents demonstrate high competence awareness and significant improvements in self-regulation for solving novel tasks",
+            "limitations": [],
+            "future_directions": "Enabling autonomous agents to adapt to new environments while reducing reliance on extensive training data and large models"
+        }
+    },
+    {
+        "query": "all:\"autonomous agents\" AND all:\"language model\"",
+        "pmid": "40696264",
+        "title": "AgentMRI: A Vison Language Model-Powered AI System for Self-regulating MRI Reconstruction with Multiple Degradations.",
+        "journal": "Journal of imaging informatics in medicine",
+        "doi": "10.1007/s10278-025-01617-0",
+        "abstract": "Artificial intelligence (AI)-driven autonomous agents are transforming multiple domains by integrating reasoning, decision-making, and task execution into a unified framework. In medical imaging, such agents have the potential to change workflows by reducing human intervention and optimizing image quality. In this paper, we introduce the AgentMRI. It is an AI-driven system that leverages vision language models (VLMs) for fully autonomous magnetic resonance imaging (MRI) reconstruction in the presence of multiple degradations. Unlike traditional MRI correction or reconstruction methods, AgentMRI does not rely on manual intervention for post-processing or does not rely on fixed correction models. Instead, it dynamically detects MRI corruption and then automatically selects the best correction model for image reconstruction. The framework uses a multi-query VLM strategy to ensure robust corruption detection through consensus-based decision-making and confidence-weighted inference. AgentMRI automatically chooses deep learning models that include MRI reconstruction, motion correction, and denoising models. We evaluated AgentMRI in both zero-shot and fine-tuned settings. Experimental results on a comprehensive brain MRI dataset demonstrate that AgentMRI achieves an average of 73.6% accuracy in zero-shot and 95.1% accuracy for fine-tuned settings. Experiments show that it accurately executes the reconstruction process without human intervention. AgentMRI eliminates manual intervention and introduces a scalable and multimodal AI framework for autonomous MRI processing. This work may build a significant step toward fully autonomous and intelligent MR image reconstruction systems.",
+        "keywords": [
+            "AI agent",
+            "Decision-making",
+            "Large multimodal models",
+            "MRI motion correction",
+            "MRI reconstruction",
+            "Reasoning",
+            "Vision language models"
+        ],
+        "authors": [
+            "Gulfam Ahmed Sajua",
+            "Marjan Akhib",
+            "Yuchou Chang"
+        ],
+        "insight": {
+            "domain": [
+                "Artificial Intelligence",
+                "Medical Imaging"
+            ],
+            "research_problem": "Developing an AI-driven system for fully autonomous magnetic resonance imaging (MRI) reconstruction",
+            "methods": [
+                "Vision Language Models (VLMs)",
+                "Multi-query VLM strategy",
+                "Consensus-based decision-making",
+                "Confidence-weighted inference",
+                "Deep learning models"
+            ],
+            "datasets": [
+                "Comprehensive brain MRI dataset"
+            ],
+            "metrics": [
+                "Accuracy"
+            ],
+            "key_findings": "AgentMRI achieves an average of 73.6% accuracy in zero-shot and 95.1% accuracy for fine-tuned settings",
+            "limitations": "",
+            "future_directions": "Building a fully autonomous and intelligent MR image reconstruction system"
+        }
+    },
+    {
+        "query": "all:\"function calling\" AND all:\"large language model\"",
+        "pmid": "41269837",
+        "title": "NLI4VolVis: Natural Language Interaction for Volume Visualization via LLM Multi-Agents and Editable 3D Gaussian Splatting.",
+        "journal": "IEEE transactions on visualization and computer graphics",
+        "doi": "10.1109/TVCG.2025.3633888",
+        "abstract": "Traditional volume visualization (VolVis) methods, like direct volume rendering, suffer from rigid transfer function designs and high computational costs. Although novel view synthesis approaches enhance rendering efficiency, they require additional learning effort for non-experts and lack support for semantic-level interaction. To bridge this gap, we propose NLI4VolVis, an interactive system that enables users to explore, query, and edit volumetric scenes using natural language. NLI4VolVis integrates multi-view semantic segmentation and vision-language models to extract and understand semantic components in a scene. We introduce a multi-agent large language model architecture equipped with extensive function-calling tools to interpret user intents and execute visualization tasks. The agents leverage external tools and declarative VolVis commands to interact with the VolVis engine powered by 3D editable Gaussians, enabling open-vocabulary object querying, real-time scene editing, best-view selection, and 2D stylization. We validate our system through case studies and a user study, highlighting its improved accessibility and usability in volumetric data exploration. We strongly recommend readers check out our case studies, demo video, and source code at https://nli4volvis.github.io/.",
+        "keywords": [],
+        "authors": [
+            "Kuangshi Ai",
+            "Kaiyuan Tang",
+            "Chaoli Wang"
+        ],
+        "insight": {
+            "domain": [
+                "Computer Vision",
+                "Human-Computer Interaction",
+                "Volume Visualization"
+            ],
+            "research_problem": "Improving accessibility and usability of volumetric data exploration",
+            "methods": [
+                "Multi-view semantic segmentation",
+                "Vision-language models",
+                "Multi-agent large language model architecture"
+            ],
+            "datasets": [],
+            "metrics": [],
+            "key_findings": "Improved accessibility and usability in volumetric data exploration",
+            "limitations": [],
+            "future_directions": []
+        }
+    }
+]
