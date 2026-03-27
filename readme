@@ -27,3 +27,107 @@ Papers
 Authors
 Methods
 Graph is rendered directly on the dashboard
+
+# 📄 AI Research Paper Analyzer & Insight Generator
+
+## 🚀 Overview
+
+The AI Research Paper Analyzer is an intelligent system designed to collect, process, and analyze research papers from multiple sources such as arXiv and PubMed.
+It enables users to summarize papers, extract key insights, perform semantic search, and export structured results**.
+
+This project combines Natural Language Processing (NLP), Machine Learning, and Web Technologies to simplify research analysis.
+
+
+
+## 🎯 Features
+
+* 📥 Upload research papers (PDF format)
+* 🌐 Fetch papers from external sources (arXiv, PubMed, websites)
+* 🔍 Semantic search using vector embeddings
+* 🤖 AI-powered summarization and insights generation
+* 🧠 Knowledge graph extraction
+* 📊 Export results to Excel/CSV
+* 💻 Interactive dashboard using Streamlit
+
+
+
+## 🏗️ System Architecture
+
+The system consists of the following components:
+
+* **Frontend:** Streamlit (User Interface)
+* **Backend:** Python
+* **Vector Database:** FAISS
+* **AI Engine:** LLM (Gemini / Groq fallback)
+* **Data Sources:** arXiv API, PubMed API, Web scraping
+
+### 🔄 Workflow
+
+1. User uploads a research paper or enters a query
+2. System extracts and preprocesses text
+3. Text is converted into embeddings
+4. Embeddings are stored in FAISS
+5. Semantic search retrieves relevant documents
+6. LLM generates summaries and insights
+7. Results displayed and exported
+
+
+
+## 📊 Data Flow
+
+* User → Frontend → Backend
+* Backend → Data Collection (APIs/Web)
+* Backend → FAISS (Vector Storage)
+* Backend → LLM → Output
+* Output → Dashboard / Excel
+
+---
+
+## 🛠️ Tech Stack
+
+* **Programming Language:** Python
+* **Frontend:** Streamlit
+* **Libraries:**
+
+  * NumPy
+  * Pandas
+  * Scikit-learn
+  * FAISS
+* **AI Models:** Gemini / Groq API
+* **Data Sources:** arXiv, PubMed
+
+
+
+### 2️⃣ Install Dependencies
+
+
+pip install -r requirements.txt
+
+
+### 3️⃣ Run the Application
+
+streamlit run app.py
+
+## 📤 Output
+
+* 📄 Research paper summaries
+* 🔑 Key insights extraction
+* 🧠 Knowledge graph
+* 📊 Excel/CSV export
+
+
+## 🔮 Future Enhancements
+
+* 📌 Multi-language support
+* 📌 Advanced knowledge graph visualization
+* 📌 Integration with more research databases
+* 📌 Real-time collaboration features
+
+
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+
+
